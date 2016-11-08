@@ -12,8 +12,26 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
      
     <script language="JavaScript">
-    function showInput(displays, userinputs) {
-    	document.getElementById(displays).innerHTML = document.getElementById(userinputs).value;
+    function showInput1() {
+    	document.getElementById('display1').innerHTML = document.getElementById('user_inputs1').value;
+    	}
+    	</script>
+    	
+    <script language="JavaScript">
+    function showInput2() {
+    	document.getElementById('displays2').innerHTML = document.getElementById('user_inputs2').value;
+    	}
+    	</script>
+    	
+    <script language="JavaScript">
+    function showInput3() {
+    	document.getElementById('displays3').innerHTML = document.getElementById('user_inputs3').value;
+    	}
+    	</script>
+    	
+    <script language="JavaScript">
+    function showInput4() {
+    	document.getElementById('displays4').innerHTML = document.getElementById('user_inputs4').value;
     	}
     	</script>
 
@@ -342,12 +360,12 @@
                         <li class = "Q9ced" id = "ed_9c_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_9c_1")></button> Glucometer Use </li>
                         <form>
                 			<label><b>Other:</b></label>
-                			<input type="text" name="message" id="user_input">
+                			<input type="text" name="message" id="user_inputs1">
             		    </form>
                 
-               		    <input type="submit" onclick="showInput(display, user_input);"><br/>
+               		    <input type="submit" onclick="showInput1();"><br/>
                 		<label>Other:</label>
-               			<p><span id='display'></span></p>
+               			<p><span id='displays1'></span></p>
                     </ul>
                 </div>
 
@@ -498,12 +516,12 @@
                         
                         <form>
                 			<label><b>Other:</b></label>
-                			<input type="text" name="message" id="user_input2">
+                			<input type="text" name="message" id="user_inputs2">
             		    </form>
                 
-               		    <input type="submit" onclick="showInput(display2, user_input2);"><br/>
+               		    <input type="submit" onclick="showInput2();"><br/>
                 		<label>Other:</label>
-               			<p><span id='display2'></span></p>
+               			<p><span id='displays2'></span></p>
 
                     </ul>
                 </div>
@@ -576,12 +594,12 @@
                         <li class = "Q9cev" id = "ev_9c_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_9c_1")></button> SMBG Log monthly</li>
                         <form>
                 			<label><b>Other:</b></label>
-                			<input type="text" name="message" id="user_input3">
+                			<input type="text" name="message" id="user_inputs3">
             		    </form>
                 
-               		    <input type="submit" onclick="showInput(display3, user_input3);"><br/>
+               		    <input type="submit" onclick="showInput3();"><br/>
                 		<label>Other:</label>
-               			<p><span id='display3'></span></p>
+               			<p><span id='displays3'></span></p>
                     </ul>
                 </div>
 
@@ -638,12 +656,12 @@
                         <li class = "Q9cg" id = "goals_9c_1"><button class = "glyphicon glyphicon-remove" onclick = hide("goals_9c_1")></button> Regular SMBG</li>
                         <form>
                 			<label><b>Other:</b></label>
-                			<input type="text" name="message" id="user_input4">
+                			<input type="text" name="message" id="user_inputs4">
             		    </form>
                 
-               		    <input type="submit" onclick="showInput(display4, user_input4);"><br/>
+               		    <input type="submit" onclick="showInput4();"><br/>
                 		<label>Other:</label>
-               			<p><span id='display4'></span></p>
+               			<p><span id='displays4'></span></p>
                     </ul>
                 </div>
 
