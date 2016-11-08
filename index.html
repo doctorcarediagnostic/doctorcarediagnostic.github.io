@@ -257,9 +257,6 @@
                 <h3> Intervention: Education </h3>
                 <div>
                     <ul class = "ed_recommendation">
-                        <form> 
-                        	Other: <input type="text", name = "others" value="">
-                        </form>
                         <!-- Question 1 - Clinical -->
                         <li class = "Q1aed" id = "ed_1a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_1a_1")></button>     Healthy eating for Diabetes </li>
                         <li class = "" id = "ed_1a_2"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_1a_2")></button>      Planning for Physical Activity </li>
@@ -343,16 +340,20 @@
                         <!-- Question 9 -->
                         <li class = "" id = "ed_9a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_9a_1")></button> Foot Care </li>
                         <li class = "Q9ced" id = "ed_9c_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_9c_1")></button> Glucometer Use </li>
-
+                        <form>
+                			<label><b>Other:</b></label>
+                			<input type="text" name="message" id="user_input">
+            		    </form>
+                
+               		    <input type="submit" onclick="showInput();"><br/>
+                		<label>Other:</label>
+               			<p><span id='display'></span></p>
                     </ul>
                 </div>
 
                 <h3> Intervention: Lifestyle Recommendation </h3>
                 <div>
                     <ul class = "life_recommendation">
-                        <form> 
-                        	Other: <input type="text", name = "others" value="">
-                        </form>
                     
                         <!-- Question 1 -->
                         <li class = "Q1al" id = "life_1a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_1a_1")></button>  Eat three meals per day, adding a snack if feeling hungry</li>
@@ -495,7 +496,14 @@
                         <li class = "Q9cl" id = "life_9c_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_9c_1")></button> Self-monitor blood sugars regularly, as instructed by health care professional</li>
                         <li class = "Q9cl" id = "life_9c_2"><button class = "glyphicon glyphicon-remove" onclick = hide("life_9c_2")></button> Check blood sugar with symptoms of low or high blood sugar</li>
                         
-
+                        <form>
+                			<label><b>Other:</b></label>
+                			<input type="text" name="message" id="user_input2">
+            		    </form>
+                
+               		    <input type="submit" onclick="showInput();"><br/>
+                		<label>Other:</label>
+               			<p><span id='display2'></span></p>
 
                     </ul>
                 </div>
@@ -503,9 +511,6 @@
                 <h3> Monitoring & Evaluation </h3>
                 <div id = "Intervention">
                     <ul class= "monitoring_evaluation">
-                        <form> 
-                        	Other: <input type="text", name = "others" value="">
-                        </form>
                         <!-- Question 1 -->
                         <li class = "Q1aed" id = "ev_1a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_1a_1")></button> Food intake</li>
                         <li class = "" id = "ev_1a_2"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_1a_2")></button>  Related lab results at least every 3 - 6 months</li>
@@ -569,14 +574,20 @@
                         <!-- Question 9 -->
                         <li class = "" id = "ev_9a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_9a_1")></button> Annual foot exam </li>
                         <li class = "Q9cev" id = "ev_9c_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_9c_1")></button> SMBG Log monthly</li>
-                    
+                        <form>
+                			<label><b>Other:</b></label>
+                			<input type="text" name="message" id="user_input3">
+            		    </form>
+                
+               		    <input type="submit" onclick="showInput();"><br/>
+                		<label>Other:</label>
+               			<p><span id='display3'></span></p>
                     </ul>
                 </div>
 
                 <h3> Goals of Care </h3>
                 <div id = "Intervention">
                     <ul class= "goal_of_care">
-                        <input>
                         <!-- Question 1 -->
                         <li class = "Q1ag" id = "goals_1a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("goals_1a_1")></button>  Glycemic Control: HbA1c <7% </li>
                         <li class = "Q1bg" id = "goals_1b_1"><button class = "glyphicon glyphicon-remove" onclick = hide("goals_1b_1")></button>  Optimal Cholesterol: LDL <2.0 </li>
@@ -625,6 +636,14 @@
                         <!-- Question 9 -->
                         <li class = "" id = "goals_9a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("goals_9a_1")></button> Prevention of neuropathy & foot-related complications </li>
                         <li class = "Q9cg" id = "goals_9c_1"><button class = "glyphicon glyphicon-remove" onclick = hide("goals_9c_1")></button> Regular SMBG</li>
+                        <form>
+                			<label><b>Other:</b></label>
+                			<input type="text" name="message" id="user_input4">
+            		    </form>
+                
+               		    <input type="submit" onclick="showInput();"><br/>
+                		<label>Other:</label>
+               			<p><span id='display4'></span></p>
                     </ul>
                 </div>
 
@@ -633,15 +652,6 @@
                     <div id = "details">
                     </div>
                 </div>
-                
-                <form>
-                	<label><b>Enter a message</b></label>
-                	<input type="text" name="message" id="user_input">
-                </form>
-                
-                <input type="submit" onclick="showInput();"><br/>
-                <label>Your output:</label>
-                <p><span id='display'></span></p>
                 
 
                 <h3> Appendix </h3>
