@@ -18,10 +18,10 @@ function printPlan(counter) {
     }
     $("#appointment").remove();
     $("#printButton").remove();
-    appenddates(counter)
-    for (i = 1; i<counter; i++) {
-        $('#inputbox' + i).remove();
-    }
+   // appenddates(counter)
+    //for (i = 1; i<counter; i++) {
+       // $('#inputbox' + i).remove();
+    //}
     printcontent = printcontent + document.getElementById("Print").innerHTML
     document.body.innerHTML = printcontent;
     window.print();
@@ -650,7 +650,7 @@ $(document).ready(function() {
         var id = "date" + counter
         var id2 = "alternate" + counter
         var id3 = "inputbox"+ counter
-        $("#plan").append("<div id = '" + id3 +"'> <p>Date: <input type='text' class='datepicker' id = '"+ id +"'>&nbsp;<input type:text id= '"+ id2 +"' size='30'><input type='text' value='Please enter a time'></p></div>")
+        $("#plan").append("<div id = '" + id3 +"'> <p>Date: <input type='text' class='datepicker' id = '"+ id +"'>&nbsp;<input type:text id= '"+ id2 +"' size='30'><input ></p></div>")
         $( ".datepicker" ).datepicker({
             altField: "#" + id2,
             altFormat: "DD, d MM, yy"
