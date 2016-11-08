@@ -650,7 +650,7 @@ $(document).ready(function() {
         var id = "date" + counter
         var id2 = "alternate" + counter
         var id3 = "inputbox"+ counter
-        $("#plan").append("<div id = '" + id3 +"'> <p>Date: <input type='text' class='datepicker' id = '"+ id +"'>&nbsp;<input type:text id= '"+ id2 +"' size='30'><input ></p></div>")
+        $("#plan").append("<div id = '" + id3 +"'> <p>Date: <input type='text' class='datepicker' id = '"+ id +"'>&nbsp;<input type:text id= '"+ id2 +"' size='30'>&nbsp;<input ></p></div>")
         $( ".datepicker" ).datepicker({
             altField: "#" + id2,
             altFormat: "DD, d MM, yy"

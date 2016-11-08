@@ -10,7 +10,12 @@
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-    
+     
+    <script language="JavaScript">
+    function showInput() {
+    	document.getElementbyid('display').innerHTML = document.getElementById("user_input").value;
+    	}
+    	</script>
 
     <!--jQuery UI library -->
     <link rel="stylesheet" href="jquery-ui.min.css">
@@ -628,6 +633,16 @@
                     <div id = "details">
                     </div>
                 </div>
+                
+                <form>
+                	<label><b>Enter a message</b></label>
+                	<input type="text" name="message" id="user_input">
+                </form>
+                
+                <input type="submit" onclick="showInput();"><br/>
+                <label>Your output:</label>
+                <p><span id='display'></span></p>
+                
 
                 <h3> Appendix </h3>
                 <div id = "Intervention">
