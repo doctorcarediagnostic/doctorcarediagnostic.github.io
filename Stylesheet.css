@@ -1,0 +1,68 @@
+@import url("bootstrap.min.css");
+@import url("bootstrap-theme.css");
+
+p {
+	font-size:14px;
+	font-family:Verdana;
+}
+.radio {
+	left:20px;
+}
+input{
+	left: 20px;
+}
+/*#printButton {
+	position:absolute;
+}*/
+#Topics {
+	font-size:18px;
+	font-weight: bold;
+	font-family:Verdana;
+	text-align:left;
+}
+#Icon {
+	text-align:right;
+}
+#issues {
+	display:none;
+}
+.panel-body {
+	text-align: left;
+}
+.ed_recommendation li {
+	text-align:left;
+	/*background-color: #6699cc;*/
+	display:none;
+}
+.life_recommendation li {
+	text-align:left;
+	/*background-color: #ffd271;*/
+	display:none;
+}
+.monitoring_evaluation li {
+	text-align:left;
+	display:none;
+}
+
+.goal_of_care li{
+	text-align:left;
+	display:none;
+}
+.App li {
+	text-align:left;
+	display:none;
+}
+#Intervention {
+	min-height:20px;
+}
+
+li button { 
+	padding: 0;
+	border: none;
+	background: none;
+}
+
+/*#main {
+	display:none;
+}
+*/

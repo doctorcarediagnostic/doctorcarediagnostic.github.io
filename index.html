@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="Stylesheet.css">
+    <script src="jquery-1.12.2.min.js"></script>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    
+
+    <!--jQuery UI library -->
+    <link rel="stylesheet" href="jquery-ui.min.css">
+    <script src="external/jquery/jquery.js"></script>
+    <script src="jquery-ui.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src = "Script.js"></script>
+    <script src = "bootstrap.min.js"></script>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <title> Diagonastic </title>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+        <div class="container-fluid">
+            <div class="container-fluid" id="Questions"> 
+                <div id = "logo">
+                    <img src = "./Images/Picture1.png" class = "img-responsive" width="250" height="130">
+                </div>
+                <h1> Doctorcare Diagonastic </h1>
+                <div id = "issues">
+                    <h3> Issues </h3>
+                </div>
+                <div class="container-fluid" id = "Clinical_form">
+                    <div class = "panel panel-default panel-body" data-toggle = "collapse" data-target = "#Clinical" id = "Topics" style="cursor: pointer;"> Clinical: </div>
+                    <form role = "form" class = "collapse" id = "Clinical">
+                        <div class="checkbox">
+                            <input type="checkbox" id = "Question1a"><label id = "Q1a">Elevated HbA1c</label><br>
+                        </div>
+
+                        <div class="checkbox">
+                            <input type="checkbox" id = "Question1b"><label id = "Q1b">Elevated Cholesterol</label><br>
+                        </div>
+
+                        <div class="checkbox">
+                            <input type="checkbox" id = "Question1c"><label id = "Q1c">Elevated Triglycerides</label><br>
+                        </div>
+
+                        <div class="checkbox">
+                            <input type="checkbox" id = "Question1d"><label id = "Q1d">Other altered nutrition-related lab results</label><br>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="container-fluid" id = "Nutrition_form">
+                    <div class = "panel panel-default panel-body" data-toggle = "collapse" data-target = "#Nutrition" id = "Topics" style="cursor: pointer;"> Nutrition: </div>
+                    <form role = "form" class = "collapse" id = "Nutrition">
+                        <p><b> Energy intake </b></p>
+                        <div class="radio">
+                            <input type="radio" id = "Question2aY" name ="Q2a"><label id = "Q2aY">Inadequate Energy Intake</label><br>
+                            <input type="radio" id = "Question2aN" name ="Q2a"><label id = "Q2aN">Excessive Energy Intake</label><br>
+                        </div>
+
+                        <p><b> Protein intake </b></p>
+                        <div class="radio" id = "Question2b">
+                            <input type="radio" id = "Question2bY" name = "Q2b"><label id = "Q2bY">Inadequate Protein Intake</label><br>
+                            <input type="radio" id = "Question2bN" name = "Q2b"><label id = "Q2bN">Excessive Protein Intake</label><br>
+                        </div>
+
+                        <div class = "checkbox">
+                            <input type="checkbox" id = "Question2c"><label id = "Question2c">Excessive Fat Intake</label><br>
+                        </div>
+
+                        <p><b> What is your CHO intake?</b></p>
+                        <div class="radio" id = "Question2d">
+                            <input type="radio" id = "Question2dY" name = "Q2d"><label id = "Q2dY">Excessive CHO intake</label><br>
+                            <input type="radio" id = "Question2dN" name = "Q2d"><label id = "Q2dN">Inconsistent CHO intake</label><br>
+                        </div>
+
+                        <div class="checkbox">
+                            <input type="checkbox" id = "Question2e"><label id = "Q2e">Inadequate Fibre Intake</label><br>
+                        </div>
+
+                        <div class="checkbox">
+                            <input type="checkbox" id = "Question2f"><label id = "Q2f">Inadequate Vitamin Intake</label><br>
+                        </div>
+
+                        <div class="checkbox">
+                            <input type="checkbox" id = "Question2g"><label id = "Q2g">Inadequate Mineral Intake</label><br>
+                        </div>
+
+                        <div class="checkbox">
+                            <input type="checkbox" id = "Question2h"><label id = "Q2h">Excessive Phosphorus/Potassium Intake</label><br>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="container-fluid" id = "Physical_Activity_form">
+                    <div class = "panel panel-default panel-body" data-toggle = "collapse" data-target = "#Physical_Activity" id = "Topics" style="cursor: pointer;"> Physical Activity: </div>
+                    <form role="form" class = "collapse" id = "Physical_Activity">
+                        <div class="checkbox">
+                            <input type="checkbox" id = "Question3a"><label id = "Q3a">Insufficient Aerobic</label><br>
+                        </div>
+
+                        <div class="checkbox">
+                            <input type="checkbox" id = "Question3b"><label id = "Q3b">Insufficient Resistance</label><br>
+                        </div>
+
+                        <div class="checkbox">
+                            <input type="checkbox" id = "Question3c"><label id = "Q3c">Insufficient Stretching</label><br>
+                        </div>
+
+                        <div class="checkbox">
+                            <input type="checkbox" id = "Question3d"><label id = "Q3d">Risk for Hypoglycemia</label><br>
+                        </div>
+                    </form>
+                </div>
+
+                <div class = "container-fluid" id = "Sleep_form">   
+                    <div class = "panel panel-default panel-body" data-toggle = "collapse" data-target = "#Sleep" id = "Topics" style="cursor: pointer;"> Sleep: </div>
+                        <form role = "form" class = "collapse" id = "Sleep">
+                        <div class="checkbox">
+                            <input type="checkbox" id = "Question4a"><label id = "Q4a">Diffulty getting to sleep</label><br>
+                        </div>
+
+                        <div class="checkbox">
+                            <input type="checkbox" id = "Question4b"><label id = "Q4b">Difficulty staying asleep</label><br>
+                        </div>
+
+                        <div class="checkbox">
+                            <input type="checkbox" id = "Question4c"><label id = "Q4c">Sleep Apnea</label><br>
+                        </div>
+
+                        <div class="checkbox">
+                            <input type="checkbox" id = "Question4d"><label id = "Q4d">Faulty CPAP Device</label><br>
+                        </div>
+                        </form>
+                </div>
+
+                <div class="container-fluid" id = "Stress_form">
+                    <div class = "panel panel-default panel-body" data-toggle = "collapse" data-target = "#Stress" id = "Topics" style="cursor: pointer;"> Stress: </div>
+                        <form role="form" class = "collapse" id = "Stress">
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="Q5a" id = "Question5a">Poor Coping Skills</label><br>
+                            </div>
+
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="Q5b" id = "Question5b">Awareness</label><br>
+                            </div>
+
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="Q5c" id = "Question5c">Knowledge</label><br>
+                            </div>
+
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="Q5d" id = "Question5d">Emotional Eating</label><br>
+                            </div>
+                        </form>
+                </div>
+
+                <div class="container-fluid" id = "Substance_form">
+                    <div class = "panel panel-default panel-body" data-toggle = "collapse" data-target = "#Substance" id = "Topics" style="cursor: pointer;"> Substance: </div>
+                        <form role="form" class = "collapse" id = "Substance">
+                            <div class="checkbox">
+                                <input type="checkbox" id = "Question6a"><label id = "Q6a">Excessive Alcohol Usage</label><br>
+                            </div>
+
+                            <div class="checkbox">
+                                <input type="checkbox" id = "Question6b"><label id = "Q6b">Smoke</label><br>
+                            </div>
+                        </form>
+                </div>
+
+                <div class="container-fluid" id = "Medication_form">
+                    <div class = "panel panel-default panel-body" data-toggle = "collapse" data-target = "#Medication" id = "Topics" style="cursor: pointer;"> Medication: </div>
+                        <form role="form" class = "collapse" id = "Medication">
+                            <div class="checkbox">
+                                <input type="checkbox" id = "Question7a"><label id = "Q7a">Knowledge</label><br>
+                            </div>
+
+                            <div class="checkbox">
+                                <input type="checkbox" id = "Question7b"><label id = "Q7b">Experiencing Side Effects</label><br>
+                            </div>
+
+                            <div class="checkbox">
+                                <input type="checkbox" id = "Question7c"><label id = "Q7c">Difficulty Managing Multiple Medications</label><br>
+                            </div>
+                        </form>
+                </div>
+
+                <div class="container-fluid" id = "Social_Issue_form">
+                    <div class = "panel panel-default panel-body" data-toggle = "collapse" data-target = "#Social" id = "Topics" style="cursor: pointer;"> Social Issues: </div>
+                        <form role="form" class = "collapse" id = "Social">
+                            <div class="checkbox">
+                                <input type="checkbox" id = "Question8a"><label id = "Q8a">Finance</label><br>
+                            </div>
+
+                            <div class="checkbox">
+                                <input type="checkbox" id = "Question8b"><label id = "Q8b">Housing</label><br>
+                            </div>
+
+                            <div class="checkbox">
+                                <input type="checkbox" id = "Question8c"><label id = "Q8c">Under/Unemployed</label><br>
+                            </div>
+
+                            <div class="checkbox">
+                                <input type="checkbox" id = "Question8d"><label id = "Q8d">Safety</label><br>
+                            </div>
+
+                            <div class="checkbox">
+                                <input type="checkbox" id = "Question8e"><label id = "Q8e">Social Isolation</label><br>
+                            </div>
+
+                            <div class="checkbox">
+                                <input type="checkbox" id = "Question8f"><label id = "Q8f">Newcomer</label><br>
+                            </div>
+                        </form>
+                </div>
+
+            <div class="container-fluid" id = "Self_Management_form">
+                <div class = "panel panel-default panel-body" data-toggle = "collapse" data-target = "#Self_Management" id = "Topics" style="cursor: pointer;"> Self Management: </div>
+                    <form role="form" class = "collapse" id = "Self_Management">
+                        <div class="checkbox">
+                            <input type="checkbox" id = "Question9a"><label id = "Q9a">Risk for Foot Ulcer</label><br>
+                        </div>
+
+                        <div class="checkbox">
+                            <input type="checkbox" id = "Question9b"><label id = "Q9b">Risk for Charcot Foot</label><br>
+                        </div>
+
+                        <div class="checkbox">
+                            <input type="checkbox" id = "Question9c"><label id = "Q9c">SMBG</label><br>
+                        </div>
+
+                    </form>
+            </div>
+        </div>
+
+            <div class="container-fluid" id = "Print">
+                <h3> Intervention: Education </h3>
+                <div>
+                    <ul class = "ed_recommendation">
+                        <!-- Question 1 - Clinical -->
+                        <li class = "Q1aed" id = "ed_1a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_1a_1")></button>     Healthy eating for Diabetes </li>
+                        <li class = "" id = "ed_1a_2"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_1a_2")></button>      Planning for Physical Activity </li>
+                        <li class = "Q1bed" id = "ed_1b_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_1b_1")></button>     Sources of high cholesterol </li>
+                        <li class = "" id = "ed_1b_2"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_1b_2")></button>      Soluble & Insoluble Fibre </li>
+                        <li class = "Q1ced" id = "ed_1c_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_1c_1")></button>     Sources of carbohydrates</li>
+                        <li class = "Q1ced" id = "ed_1c_2"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_1c_2")></button>     Sources of simple sugars</li>
+                        <li class = "" id = "ed_1c_3"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_1c_3")></button>      Appropriate fat (i.e transfat, saturated fat, polyunsaturated fat, omerga-3) intake</li>
+                        <li class = "Q1ded" id = "ed_1d_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_1d_1")></button>     Education on specific nutrition-related issue </li>
+
+                        <!-- Question 2 -  Nutrition (Physical Activity, Appropriate Fat, Soluble & Insoluble found in Clinical) -->
+                        <li class = "Q2aed" id = "ed_2a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_2a_1")></button>     Healthy Eating (Plate Method, Canada Food Guide) </li>
+                        <li class = "Q2bed" id = "ed_2b_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_2b_1")></button>     Appropriate Protein Intake & Sources of Protein</li>
+                        <li class = "Q2d1ed" id = "ed_2d1_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_2d1_1")></button>  Appropriate Carbohydrate Intake & Sources of Carbohydrate </li>
+                        <li class = "Q2d2ed" id = "ed_2d2_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_2d2_1")></button>  Consistent Carbohydrate Intake </li>
+
+                        <li class = "Q2fed" id = "ed_2f_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_2f_1")></button>     Vitamin D, Folate, B12 </li>
+
+
+                        <li class = "Q2ged" id = "ed_2g_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_2g_1")></button>     Calcium, Iron, Magnesium, Zinc, Other supplements </li>
+                        <li class = "Q2hed" id = "ed_2h_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_2h_1")></button>     Appropriate Phosphorus/Potassium Intake & Low/High Sources of Phosphorus/Potassium </li>
+
+                        <!-- Question 3 - Physical Activity -->
+                        <li class = "Q3bed" id = "ed_3b_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_3b_1")></button> Resistance band exercises </li>
+                        <li class = "Q3bed" id = "ed_3b_2"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_3b_2")></button> Free weight exercises </li>
+                        <li class = "Q3ced" id = "ed_3c_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_3c_1")></button> Chair Stretches </li>
+                        <li class = "Q3ced" id = "ed_3c_2"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_3c_2")></button> Chair Yoga </li>
+                        <li class = "Q3ced" id = "ed_3c_3"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_3c_3")></button> Stretching Exercises </li>
+                        <li class = "Q3ded" id = "ed_3d_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_3d_1")></button> Hypoglycemia </li>
+
+                        <!-- Question 4 - Sleep -->
+                        <li class = "" id = "ed_4a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_4a_1")></button>  Importance of Sleep for Chronic Conditions</li>
+                        <li class = "Q4aed" id = "ed_4a_2"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_4a_2")></button> Sleep Hygiene</li>
+                        <li class = "Q4aed" id = "ed_4a_3"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_4a_3")></button> Stress Management</li>
+                        <li class = "" id = "ed_4a_4"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_4a_4")></button>  Meal Planning</li>
+
+                        <li class = "Q4bed" id = "ed_4b_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_4b_1")></button> Hyperglycemia </li>
+                        <li class = "Q4bed" id = "ed_4b_2"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_4b_2")></button> Deep Breathing</li>
+                        <li class = "" id = "ed_4b_3"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_4b_3")></button>  Relaxation Techniques </li>
+
+                        <li class = "Q4ced" id = "ed_4c_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_4c_1")></button> Sleep Apnea </li>
+
+                        <li class = "Q4ded" id = "ed_4d_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_4d_1")></button> Benefits of sleep for Chronic Conditions </li>
+                        <li class = "Q4ded" id = "ed_4d_2"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_4d_2")></button> Benefits CPAP for Sleep APnea </li>
+                        </li>
+
+                        <!-- Question 5 -->
+                        <li class = "" id = "ed_5a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_5a_1")></button> Importance of Social Networks </li>
+                        <li class = "Q5aed" id = "ed_5a_2"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_5a_2")></button> Interpersonal Communication</li>
+
+                        <li class = "Q5bed" id = "ed_5b_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_5b_1")></button> Explore triggers & Responses </li>
+                        <li class = "Q5bed" id = "ed_5b_2"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_5b_2")></button> Mind-Body Connection </li>
+
+                        <li class = "Q5ced" id = "ed_5c_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_5c_1")></button> Overview of Stress Management </li>
+
+                        <li class = "Q5ded" id = "ed_5d_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_5d_1")></button> Overview of Emotional Eating </li>
+
+                        <!-- Question 6 -->
+                        <li class = "Q6aed" id = "ed_6a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_6a_1")></button> Alcohol & Diabetes </li>
+                        <li class = "Q6aed" id = "ed_6a_2"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_6a_2")></button> Health effects of alcohol</li>
+
+                        <li class = "Q6bed" id = "ed_6b_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_6b_1")></button> Smoking & Diabetes/Heart Disease</li>
+                        <li class = "Q6bed" id = "ed_6b_2"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_6b_2")></button> Planning to quit smoking</li>
+
+                        <!-- Question 7 -->
+                        <li class = "" id = "ed_7a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_7a_1")></button> Managing Medications</li>
+                        <li class = "" id = "ed_7a_2"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_7a_2")></button> Learning about your medications</li>
+
+                        <!-- Question 8 -->
+                        <li class = "" id = "ed_8a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_8a_1")></button> Financial Planning </li>
+                        <li class = "Q8aed" id = "ed_8a_2"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_8a_2")></button> Planning for grocery shopping</li>
+
+                        <li class = "Q8ced" id = "ed_8b_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_8b_1")></button> Motivation</li>
+
+                        <li class = "Q8ced" id = "ed_8c_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_8c_1")></button> SMART Goal Setting</li>
+
+                        <li class = "Q8ded" id = "ed_8d_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_8d_1")></button> Injury Prevention</li>
+
+                        <li class = "Q8fed" id = "ed_8f_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_8f_1")></button> Community Resources </li>
+
+                        <!-- Question 9 -->
+                        <li class = "" id = "ed_9a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_9a_1")></button> Foot Care </li>
+                        <li class = "Q9ced" id = "ed_9c_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ed_9c_1")></button> Glucometer Use </li>
+
+
+
+                    </ul>
+                </div>
+
+                <h3> Intervention: Lifestyle Recommendation </h3>
+                <div>
+                    <ul class = "life_recommendation">
+                        <!-- Question 1 -->
+                        <li class = "Q1al" id = "life_1a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_1a_1")></button>  Eat three meals per day, adding a snack if feeling hungry</li>
+                        <li class = "Q1al" id = "life_1a_2"><button class = "glyphicon glyphicon-remove" onclick = hide("life_1a_2")></button>  Try to follow the Diabetes Food Guide</li>
+                        <li class = "Q1al" id = "life_1a_3"><button class = "glyphicon glyphicon-remove" onclick = hide("life_1a_3")></button>  SMBG as indicated by health professional</li>
+                        <li class = "" id = "life_1a_4"><button class = "glyphicon glyphicon-remove" onclick = hide("life_1a_4")></button>   Increase physical activity level, aiming for at least 30 mins per day, 5 days per week</li>
+                        <li class = "Q1bl" id = "life_1b_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_1b_1")></button>  Choose food high in cholesterol less often, aim for 200mg to 300mg per day</li>
+                        <li class = "Q1bl" id = "life_1b_2"><button class = "glyphicon glyphicon-remove" onclick = hide("life_1b_2")></button>  Choose food high in soluble fibre more often</li>
+                        <li class = "Q1cl" id = "life_1c_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_1c_1")></button>  Choose food high in sugar and saturated fat less often</li>
+                        <li class = "Q1cl" id = "life_1c_2"><button class = "glyphicon glyphicon-remove" onclick = hide("life_1c_2")></button>  Choose refined grains less often, choose whole grains more often</li>
+                        <li class = "Q1cl" id = "life_1c_3"><button class = "glyphicon glyphicon-remove" onclick = hide("life_1c_3")></button>  Choose food high in omega-3 more often</li>
+
+                        <!-- Question 2 -->
+                        <li class = "Q2al" id = "life_2aY_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_2aY_1")></button> Eat balanced meals</li>
+                        <li class = "Q2al" id = "life_2aY_2"><button class = "glyphicon glyphicon-remove" onclick = hide("life_2aY_2")></button> Eat every 4-6 hours </li>
+                        <li class = "Q2al" id = "life_2aY_3"><button class = "glyphicon glyphicon-remove" onclick = hide("life_2aY_3")></button> Choose food high in energy/protein </li>
+                        <li class = "Q2al" id = "life_2aY_4"><button class = "glyphicon glyphicon-remove" onclick = hide("life_2aY_4")></button> Increase oral intake, every bite counts</li>
+                        <li class = "Q2a1l" id = "life_2aN_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_2aN_1")></button> Aim for plate method eating, add a healthy snack if feeling hungry </li>
+
+                        <li class = "Q2bl" id = "life_2bY_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_2aY_1")></button> Choose food high in protein </li>
+                        <li class = "Q2bl" id = "life_2bY_2"><button class = "glyphicon glyphicon-remove" onclick = hide("life_2aY_2")></button> Add a snack with food that contains a good source of protein </li>
+                        <li class = "Q2b1l" id = "life_2bN_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_2bN_1")></button> Aim for plate method of eating, reduce portion size of meat or meat alternatives to the recommended amount </li>  
+
+                        <li class = "Q2cl" id = "life_2c_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_2c_1")></button> Choose lean or extra lean meat and trim off the fat or skin of meat before cooking </li>     
+                        <li class = "Q2cl" id = "life_2c_2"><button class = "glyphicon glyphicon-remove" onclick = hide("life_2c_2")></button> Choose vegetable oil or canola oil more often,, instead of butter, ghee or lard for cooking </li>    
+                        <li class = "Q2cl" id = "life_2c_3"><button class = "glyphicon glyphicon-remove" onclick = hide("life_2c_3")></button> Choose food high in omega-3 more often (e.g., fatty fish, nuts) </li>    
+                        <li class = "Q2cl" id = "life_2c_4"><button class = "glyphicon glyphicon-remove" onclick = hide("life_2c_4")></button> Avoid food containing trans fat </li>    
+
+                        <li class = "Q2dl" id = "life_2d_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_2d_1")></button> Aim for plate method of eating, reduce portion size of carbohydrate ot recommended amount </li>  
+                        <li class = "Q2dl" id = "life_2d_2"><button class = "glyphicon glyphicon-remove" onclick = hide("life_2d_2")></button> Choose food with low Gl index more often, choose food with high Gl index less often. </li>   
+
+                        <li class = "Q2d1l" id = "life_2dN_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_2dN_1")></button> Eat every 4 - 6 hours, add a snack if feeling hungry</li> 
+                        <li class = "Q2d1l" id = "life_2dN_2"><button class = "glyphicon glyphicon-remove" onclick = hide("life_2dN_2")></button> Pair carbohydrate with protein for meals and snack </li>  
+                        <li class = "Q2d1l" id = "life_2dN_3"><button class = "glyphicon glyphicon-remove" onclick = hide("life_2dN_3")></button> Eat appropriate amount of food according to Canada Food guide </li>   
+
+
+
+
+                        <li class = "Q2el" id = "life_2e_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_2e_1")></button> Increase fruit and vegetable intake </li>
+                        <li class = "Q2el" id = "life_2e_2"><button class = "glyphicon glyphicon-remove" onclick = hide("life_2e_2")></button> Choose whole grain food more often </li>
+
+                        <li class = "Q2fl" id = "life_2f_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_2f_1")></button> Choose food high in vitamin D/folate/B12 </li>
+                        <li class = "" id = "life_2f_2"><button class = "glyphicon glyphicon-remove" onclick = hide("life_2f_2")></button> Take supplements, if needed; follow the instruction of health professionals (MD/RD) </li>
+
+                        <li class = "Q2gl" id = "life_2g_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_2g_1")></button> Choose food high in Calcium/Iron/Magnesium/Zinc </li>
+
+                        <li class = "Q2hl" id = "life_2h_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_2h_1")></button> Choose food with low phosphorus/potassium more often  </li>
+                        <li class = "Q2hl" id = "life_2h_2"><button class = "glyphicon glyphicon-remove" onclick = hide("life_2h_2")></button> Choose food with high phosphorus/potassium more often </li>
+                        <li class = "Q2hl" id = "life_2h_3"><button class = "glyphicon glyphicon-remove" onclick = hide("life_2h_3")></button> Focus on the portions of eating for the foods that are low and high in phosphorus/potassium </li>
+
+                        <!-- Question 3 -->
+                        <li class = "Q3al" id = "life_3a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_3a_1")></button> Research new activities/facilities for physical activity</li>
+
+                        <li class = "Q3bl" id = "life_3b_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_3b_1")></button> Increase resistance activity to 2-3 times per week, starting with 1 set of 8-15 repetitions </li>
+                        <li class = "Q3bl" id = "life_3b_2"><button class = "glyphicon glyphicon-remove" onclick = hide("life_3b_2")></button> Obtain equipment to start doing resistance exercise </li>
+
+                        <li class = "Q3cl" id = "life_3c_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_3c_1")></button> Stretch daily, if possible </li>
+                        <li class = "Q3cl" id = "life_3c_2"><button class = "glyphicon glyphicon-remove" onclick = hide("life_3c_2")></button> Practice deep breathing several times per day </li>
+
+                        <li class = "Q3dl" id = "life_3d_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_3d_1")></button> Ensure every meal contains an appropriate portion of carbohydrate and protein during physical activity </li>
+                        <li class = "Q3dl" id = "life_3d_2"><button class = "glyphicon glyphicon-remove" onclick = hide("life_3d_2")></button> Do not skip meals </li>
+                        <li class = "Q3dl" id = "life_3d_3"><button class = "glyphicon glyphicon-remove" onclick = hide("life_3d_3")></button> Carry a snack containing carbohydrate and protein during physical activity</li>
+                        <li class = "Q3dl" id = "life_3d_4"><button class = "glyphicon glyphicon-remove" onclick = hide("life_3d_4")></button> SMBG before and after physical activity </li>
+                        <li class = "Q3cl" id = "life_3d_5"><button class = "glyphicon glyphicon-remove" onclick = hide("life_3d_5")></button> Carry glucometer and 15g sugar during physical activity</li>
+
+                        <!-- Question 4 -->
+                        <li class = "Q4al" id = "life_4a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_4a_1")></button> Establish a regular bedtime</li>
+                        <li class = "" id = "life_4a_2"><button class = "glyphicon glyphicon-remove" onclick = hide("life_4a_2")></button> Practice mediation for 5+ minutes daily, especially before sleep</li>
+                        <li class = "" id = "life_4a_3"><button class = "glyphicon glyphicon-remove" onclick = hide("life_4a_3")></button> Practice relaxation techniques (e.g, guided imagery, progressive muscle relaxation, etc.)</li>
+
+                        <li class = "Q4bl" id = "life_4b_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_4b_1")></button> Avoid excess food or fluid intake past 8pm</li>
+
+                        <li class = "Q4cl" id = "life_4c_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_4c_1")></button>Use sleep aids/devices as recommended by Sleep Specialist</li>
+
+                        <li class = "Q4dl" id = "life_4d_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_4d_1")></button> VIsit CPAP specialty centre for repair.refitting</li>
+
+                        <!-- Question 5 -->
+                        <li class = "Q5al" id = "life_5a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_5a_1")></button> Practice using coping skills during periods of stress</li>
+                        <li class = "Q5al" id = "life_5a_2"><button class = "glyphicon glyphicon-remove" onclick = hide("life_5a_2")></button> Monitor Stress Levels</li>
+                        <li class = "Q5al" id = "life_5a_3"><button class = "glyphicon glyphicon-remove" onclick = hide("life_5a_3")></button> Maintain a healthy lifestyle</li>
+
+                        <li class = "Q5bl" id = "life_5b_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_5b_1")></button> Keep a journal of observations</li>
+
+                        <li class = "Q5cl" id = "life_5c_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_5c_1")></button> Notice triggers and identify potential coping strategies</li>
+
+                        <li class = "Q5dl" id = "life_5d_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_5d_1")></button> Identify emotions associated with non-mealtime eating</li>
+                        <li class = "Q5dl" id = "life_5d_2"><button class = "glyphicon glyphicon-remove" onclick = hide("life_5d_2")></button> Develop healthy alternatives during periods of emotional eating</li>
+
+
+                        <!-- Question 6 -->
+                        <li class = "Q6al" id = "life_6a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_6a_1")></button> Adjust alcohol intake as instructed by health care professional (MD/RD) </li>
+
+                        <li class = "Q6bl" id = "life_6b_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_6b_1")></button> Create list of pros & cons of smoking</li>
+                        <li class = "Q6bl" id = "life_6b_2"><button class = "glyphicon glyphicon-remove" onclick = hide("life_6b_2")></button> Connect with community or online supports for smoking cessation</li>
+                        <li class = "Q6bl" id = "life_6b_3"><button class = "glyphicon glyphicon-remove" onclick = hide("life_6b_3")></button> Speak to your family doctor about smoking cessation aids</li>
+                        <li class = "Q6bl" id = "life_6b_4"><button class = "glyphicon glyphicon-remove" onclick = hide("life_6b_4")></button> Gradually reduce daily cigarette consumption </li>
+                        <li class = "Q6bl" id = "life_6b_5"><button class = "glyphicon glyphicon-remove" onclick = hide("life_6b_5")></button> Keep a journal about smoking behaviours </li>
+
+                        <!-- Question 7 -->
+                        <li class = "Q7al" id = "life_7a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_7a_1")></button> Take medications as instructed by physician </li>
+                        <li class = "Q7al" id = "life_7a_2"><button class = "glyphicon glyphicon-remove" onclick = hide("life_7a_2")></button> Report side effects to physician </li>
+
+                        <li class = "Q7bl" id = "life_7b_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_7b_1")></button> Consult with pharmacist as needed for more information about prescribed medications </li>
+
+                        <li class = "Q7cl" id = "life_7c_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_7c_1")></button> Visit pharmacist for MedsCheck </li>
+                        <li class = "Q7cl" id = "life_7c_2"><button class = "glyphicon glyphicon-remove" onclick = hide("life_7c_2")></button> Request blister pack from pharmacist </li>
+                        <li class = "Q7cl" id = "life_7c_3"><button class = "glyphicon glyphicon-remove" onclick = hide("life_7c_3")></button> Request medication reconcilation with physician </li>
+
+                        <!-- Question 8 -->
+                        <li class = "Q8al" id = "life_8a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_8a_1")></button> Create a monthly budget</li>
+                        <li class = "Q8al" id = "life_8a_2"><button class = "glyphicon glyphicon-remove" onclick = hide("life_8a_2")></button> Create a meal plan</li>
+                        <li class = "Q8al" id = "life_8a_3"><button class = "glyphicon glyphicon-remove" onclick = hide("life_8a_3")></button> Create a grocery shopping list</li>
+
+                        <li class = "Q8bl" id = "life_8b_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_8b_1")></button> Create a plan to improve housing</li>
+
+                        <li class = "Q8cl" id = "life_8c_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_8c_1")></button> Create a plan to improve employment</li>
+                        <li class = "Q8cl" id = "life_8c_2"><button class = "glyphicon glyphicon-remove" onclick = hide("life_8c_2")></button> Write a resume</li>
+                        <li class = "Q8cl" id = "life_8c_3"><button class = "glyphicon glyphicon-remove" onclick = hide("life_8c_3")></button> Visit a career counsellor</li>
+                        <li class = "Q8cl" id = "life_8c_4"><button class = "glyphicon glyphicon-remove" onclick = hide("life_8c_4")></button> Practice interviewing skills</li>
+                        <li class = "Q8cl" id = "life_8c_5"><button class = "glyphicon glyphicon-remove" onclick = hide("life_8c_5")></button> Apply for jobs </li>
+                        <li class = "Q8cl" id = "life_8c_6"><button class = "glyphicon glyphicon-remove" onclick = hide("life_8c_6")></button> Speak to employer</li>
+
+                        <li class = "Q8dl" id = "life_8d_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_8d_1")></button> Follow safety guidelines as instructed by health care provider</li>
+                        <li class = "Q8dl" id = "life_8d_2"><button class = "glyphicon glyphicon-remove" onclick = hide("life_8d_2")></button> Always use biohazard containers to dispose sharps</li>
+
+                        <li class = "Q8el" id = "life_8e_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_8e_1")></button> Create plan to grow social network</li>
+                        <li class = "Q8el" id = "life_8e_2"><button class = "glyphicon glyphicon-remove" onclick = hide("life_8e_2")></button> Engage family and friends in regular activities</li>
+                        <li class = "" id = "life_8e_3"><button class = "glyphicon glyphicon-remove" onclick = hide("life_8e_3")></button> Connect with supportive community agencies and programs</li>
+
+                        <li class = "Q8fl" id = "life_8f_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_8f_1")></button> Explore the city</li>
+
+                        <!-- Question 9 -->
+                        <li class = "" id = "life_9a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_9a_1")></button> Check feet daily</li>
+                        <li class = "Q9al" id = "life_9a_2"><button class = "glyphicon glyphicon-remove" onclick = hide("life_9a_2")></button> Wash and dry feet well at least once daily</li>
+                        <li class = "Q9al" id = "life_9a_3"><button class = "glyphicon glyphicon-remove" onclick = hide("life_9a_3")></button> Moisterize skin daily </li>
+                        <li class = "Q9al" id = "life_9a_4"><button class = "glyphicon glyphicon-remove" onclick = hide("life_9a_4")></button> Report changes to skin, nails, sensation, colour or temperature to doctor immediately</li>
+
+                        <li class = "Q9bl" id = "life_9b_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_9b_1")></button> Monitor changes in shape, colour temperature and report to doctor</li>
+
+                        <li class = "Q9cl" id = "life_9c_1"><button class = "glyphicon glyphicon-remove" onclick = hide("life_9c_1")></button> Self-monitor blood sugars regularly, as instructed by health care professional</li>
+                        <li class = "Q9cl" id = "life_9c_2"><button class = "glyphicon glyphicon-remove" onclick = hide("life_9c_2")></button> Check blood sugar with symptoms of low or high blood sugar</li>
+
+
+
+                    </ul>
+                </div>
+
+                <h3> Monitoring & Evaluation </h3>
+                <div id = "Intervention">
+                    <ul class= "monitoring_evaluation">
+                        <!-- Question 1 -->
+                        <li class = "Q1aed" id = "ev_1a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_1a_1")></button> Food intake</li>
+                        <li class = "" id = "ev_1a_2"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_1a_2")></button>  Related lab results at least every 3 - 6 months</li>
+                        <li class = "" id = "ev_1a_3"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_1a_3")></button>  Physical activity level monthly</li>
+                        <li class = "Q1bev" id = "ev_1b_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_1b_1")></button> Food intake (esp. food high in cholesterol)</li>
+                        <li class = "Q1cev" id = "ev_1c_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_1c_1")></button> Food intake (esp. food high in carbohydrate/sugar)</li>
+
+                        <!--Question 2-->
+                        <li class = "Q2aev" id = "ev_2a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_2a_1")></button> Energy Intake Monthly</li>
+                        <li class = "Q2aev" id = "ev_2a_2"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_2a_2")></button> Weight Monthly</li>
+                        <li class = "" id = "ev_2a_3"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_2a_3")></button> Physical Activity Monthly</li>
+
+                        <li class = "Q2bev" id = "ev_2b_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_2b_1")></button> Protein Intake Monthly</li>
+
+                        <li class = "Q2cev" id = "ev_2c_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_2c_1")></button> Transfat, SF, PUSF, Omega3 intake monthly  </li>
+                        <li class = "Q2cev" id = "ev_2c_2"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_2c_2")></button> TC, TG, HDL, LDL, non-HDL quarterly</li>
+
+                        <li class = "Q2dev" id = "ev_2d_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_2d_1")></button> Transfat, SF, PUSF, Omega3 intake monthly </li>
+                        <li class = "Q2dev" id = "ev_2d_2"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_2d_2")></button> TC, HDL, LDL, non-HDL  </li>
+
+
+                        <li class = "Q2eev" id = "ev_2e_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_2e_1")></button> Whole grain food intake </li>
+                        <li class = "Q2eev" id = "ev_2e_2"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_2e_2")></button> Fruit and vegetable intake</li>
+                        <li class = "Q2eev" id = "ev_2e_3"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_2e_3")></button> Supplement(fibre) intake</li>
+
+                        <li class = "" id = "ev_2f_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_2f_1")></button> Food Intake </li>
+                        <li class = "" id = "ev_2f_2"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_2f_2")></button> Supplements </li>
+                        <li class = "" id = "ev_2f_3"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_2f_3")></button> Related lab results </li>
+
+                        <!-- Question 3 -->
+                        <li class = "Q3dev" id = "ev_3d_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_3d_1")></button> Hypoglyceima episodes every visit  </li>
+                        <li class = "Q3dev" id = "ev_3d_2"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_3d_2")></button> SMBG every visit  </li>
+
+                        <!-- Question 4 -->
+                        <li class = "" id = "ev_4a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_4a_1")></button> Sleep Monthly  </li>
+
+                        <!-- Question 5 -->
+                        <li class = "" id = "ev_5a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_5a_1")></button> Stress Level Monthly </li>
+
+                        <!-- Question 6 -->
+                        <li class = "Q6aev" id = "ev_6a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_6a_1")></button> Alcohol Intake </li>
+
+                        <li class = "Q6bev" id = "ev_6b_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_6b_1")></button> Smoking Status Monthly </li>
+
+                        <!-- Question 7 -->
+                        <li class = "" id = "ev_7a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_7a_1")></button> Med list review quarterly </li>
+
+                        <!-- Question 8 -->
+                        <li class = "Q8aev" id = "ev_8a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_8a_1")></button> Financial planning monthly </li>
+
+                        <li class = "Q8bev" id = "ev_8b_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_8b_1")></button> Housing plan quarterly</li>
+
+                        <li class = "Q8cev" id = "ev_8c_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_8c_1")></button> Employment plan monthly </li>
+
+                        <li class = "Q8dev" id = "ev_8d_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_8d_1")></button> Safety review quarterly </li>
+
+                        <li class = "Q8eev" id = "ev_8e_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_8e_1")></button> Social network monthly </li>
+
+                        <li class = "Q8fev" id = "ev_8f_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_8f_1")></button> Knowledge of community resources quarterly </li>
+
+                        <!-- Question 9 -->
+                        <li class = "" id = "ev_9a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_9a_1")></button> Annual foot exam </li>
+                        <li class = "Q9cev" id = "ev_9c_1"><button class = "glyphicon glyphicon-remove" onclick = hide("ev_9c_1")></button> SMBG Log monthly</li>
+
+                    </ul>
+                </div>
+
+                <h3> Goals of Care </h3>
+                <div id = "Intervention">
+                    <ul class= "goal_of_care">
+                        <!-- Question 1 -->
+                        <li class = "Q1ag" id = "goals_1a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("goals_1a_1")></button>  Glycemic Control: HbA1c <7% </li>
+                        <li class = "Q1bg" id = "goals_1b_1"><button class = "glyphicon glyphicon-remove" onclick = hide("goals_1b_1")></button>  Optimal Cholesterol: LDL <2.0 </li>
+                        <li class = "Q1cg" id = "goals_1c_1"><button class = "glyphicon glyphicon-remove" onclick = hide("goals_1c_1")></button>  Optimal Triglycerides: TG <1.17 </li>
+
+                        <!-- Question  2 --> 
+                        <li class = "Q2ag" id = "goals_2a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("goals_2a_1")></button>  Healthy Weight</li>
+                        <li class = "Q2ag" id = "goals_2a_2"><button class = "glyphicon glyphicon-remove" onclick = hide("goals_2a_2")></button>  Healthy blood sugar range </li>
+                        <li class = "Q2ag" id = "goals_2a_3"><button class = "glyphicon glyphicon-remove" onclick = hide("goals_2a_3")></button>  Healthy lipid profile</li>
+                        <li class = "Q2bg" id = "goals_2b_1"><button class = "glyphicon glyphicon-remove" onclick = hide("goals_2b_1")></button>  Balanced Diet</li>
+
+                        <li class = "Q2eg" id = "goals_2e_1"><button class = "glyphicon glyphicon-remove" onclick = hide("goals_2e_1")></button>  Improved digestion</li>
+                        <li class = "Q2eg" id = "goals_2e_2"><button class = "glyphicon glyphicon-remove" onclick = hide("goals_2e_2")></button>  Glycemic control</li>
+
+                        <!-- Question 3 -->
+                        <li class = "Q3ag" id = "goals_3a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("goals_3a_1")></button>  Weight Loss </li>
+                        <li class = "Q3ag" id = "goals_3a_2"><button class = "glyphicon glyphicon-remove" onclick = hide("goals_3a_2")></button>  Improved Mood </li>
+                        <li class = "Q3ag" id = "goals_3a_3"><button class = "glyphicon glyphicon-remove" onclick = hide("goals_3a_3")></button>  Lower Stress </li>
+
+                        <li class = "Q3cg" id = "goals_3c_1"><button class = "glyphicon glyphicon-remove" onclick = hide("goals_3a_1")></button>  Improved pain </li>
+                        <li class = "Q3cg" id = "goals_3c_2"><button class = "glyphicon glyphicon-remove" onclick = hide("goals_3c_2")></button>  Increased flexibility </li>
+
+                        <li class = "Q3dg" id = "goals_3d_1"><button class = "glyphicon glyphicon-remove" onclick = hide("goals_3d_1")></button>  No hypoglycemic episodes </li>
+
+                        <!-- Question 4 -->
+                        <li class = "" id = "goals_4a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("goals_4a_1")></button>  Improved quality and quantity of sleep </li>
+
+                        <!-- Question 5 -->
+                        <li class = "" id = "goals_5a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("goals_5a_1")></button>  Improved coping with stress </li>
+
+                        <!-- Question 6 -->
+                        <li class = "Q6ag" id = "goals_6a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("goals_6a_1")></button>  Moderate alcohol consumption </li>
+                        <li class = "Q6bg" id = "goals_6b_1"><button class = "glyphicon glyphicon-remove" onclick = hide("goals_6b_1")></button>  Smoking Cessation </li>
+
+                        <!-- Question 7 -->
+                        <li class = "Q7ag" id = "goals_7a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("goals_7a_1")></button>  Effective self-management of medications </li>
+
+                        <!-- Question 8 -->
+                        <li class = "Q8ag" id = "goals_8a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("goals_8a_1")></button> Financial Security </li>
+                        <li class = "Q8bg" id = "goals_8b_1"><button class = "glyphicon glyphicon-remove" onclick = hide("goals_8b_1")></button> Housing Stability </li>
+                        <li class = "Q8cg" id = "goals_8c_1"><button class = "glyphicon glyphicon-remove" onclick = hide("goals_8c_1")></button> Gainful employment </li>
+                        <li class = "Q8dg" id = "goals_8d_1"><button class = "glyphicon glyphicon-remove" onclick = hide("goals_8d_1")></button> No injuries</li>
+                        <li class = "Q8eg" id = "goals_8e_1"><button class = "glyphicon glyphicon-remove" onclick = hide("goals_8e_1")></button> Supportive social network</li>
+                        <li class = "Q8fg" id = "goals_8f_1"><button class = "glyphicon glyphicon-remove" onclick = hide("goals_8f_1")></button> Cultural adjustment </li>
+
+                        <!-- Question 9 -->
+                        <li class = "" id = "goals_9a_1"><button class = "glyphicon glyphicon-remove" onclick = hide("goals_9a_1")></button> Prevention of neuropathy & foot-related complications </li>
+                        <li class = "Q9cg" id = "goals_9c_1"><button class = "glyphicon glyphicon-remove" onclick = hide("goals_9c_1")></button> Regular SMBG</li>
+
+
+                    </ul>
+                </div>
+
+                <h3> Plan  <button class = "btn btn-primary" id = "appointment"> Add Appointment </button> </h3> 
+                <div id = "plan">
+                    <div id = "details">
+                    </div>
+                </div>
+
+                <h3> Appendix </h3>
+                <div id = "Intervention">
+                    <ul class = "App">
+                        <!-- Question 1 - Clinical -->
+                        <li class = "Q1aApp" id = "App_1a_1"><a href = "http://guidelines.diabetes.ca/CDACPG/media/documents/patient-resources/just-the-basics-healthy-eating.pdf" target="_blank"> Just the Basics </a></li>
+                        <li class = "Q1aApp" id = "App_1a_2"> Diabetes Food Guide </li>
+                        <li class = "Q1aApp" id = "App_1a_3"> Beyond the Basics </li>
+                        <li class = "Q1bApp" id = "App_1b_1"><a href = "http://www.heartandstroke.com/atf/cf/%7B99452D8B-E7F1-4BD6-A57D-B136CE6C95BF%7D/Living-with-cholesterol-en-v32.pdf" target="_blank"> Living with Cholesterol </a></li>
+
+                        <!-- Question 2 - Nutrition (Diabetes Food Guide, Just the Basics found in Clinical) -->
+                        <li class = "Q2aApp" id = "App_2a_1"><a href = "http://www.hc-sc.gc.ca/fn-an/alt_formats/hpfb-dgpsa/pdf/food-guide-aliment/view_eatwell_vue_bienmang-eng.pdf" target="_blank"> Canada Food Guide </a></li>
+                        <li class = "Q2aApp" id = "App_2a_2"> Diabetes Food Guide </li>
+                        <li class = "Q2aApp" id = "App_2a_3"> Plate Method </li>
+                        <li class = "Q2a1App" id = "App_2a1_1"><a href = "http://www.hc-sc.gc.ca/fn-an/alt_formats/pdf/label-etiquet/nutrition/cons/fact-fiche-eng.pdf" target="_blank"> CSEP Guidelines 18-64</a></li>
+                        <li class = "Q2a1App" id = "App_2a1_2"><a href = "https://www.participaction.com/sites/default/files/downloads/Participaction%20-%20Canadian%20Physical%20Activity%20Guidelines-OlderAdult.pdf"target="_blank"> CSEP Guidelines 65+</a></li>
+                        <li class = "Q2cApp" id = "App_2c_1"> *PEN </li>
+                        <li class = "Q2eApp" id = "App_2e_1"> Diabetes & Fibre Guideline for Fibre Intake </li>
+                        <li class = "Q2hApp" id = "App_2h_1"> *Kidney Foundation </li>
+
+                        <!-- Question 3 - Physical Activity -->
+                        <li class = "Q3aApp" id = "App_3a_1"> Physical Acitivty and Diabetes </li>
+                        <li class = "Q3aApp" id = "App_3a_2"><a href = "http://guidelines.diabetes.ca/CDACPG/media/documents/patient-resources/benefits-of-physical-activity.pdf" target="_blank"> Physical Acitivty - The Benefits </a></li>
+                        <li class = "Q3aApp" id = "App_3a_3"><a href = "http://archive.diabetes.ca/documents/about-diabetes/2_Planning_for_Regular_Physical_Activity.pdf" target="_blank"> Physical Acitivty - Planning for it </a></li>
+                        <li class = "Q3aApp" id = "App_3a_4"> Physical Acitivty </li>
+                        <li class = "Q3aApp" id = "App_3a_5"><a href = "http://guidelines.diabetes.ca/CDACPG/media/documents/patient-resources/maintaining-aerobic-exercise.pdf" target="_blank"> Maintaining Aerobic Exercise </a></li>
+                        <li class = "Q3aApp" id = "App_3a_6"><a href = "http://www.csep.ca/CMFiles/Guidelines/CSEP_Guidelines_Blank-Log_18-65plus_en.pdf"> Physical Acitivty Log </a></li>
+                        <li class = "Q3bApp" id = "App_3b_1"><a href = "http://guidelines.diabetes.ca/CDACPG/media/documents/patient-resources/introductory-resistance-program.pdf" target="_blank"> Physical Activity - Introductory Resistance Program </a></li>
+                        <li class = "Q3bApp" id = "App_3b_1"><a href = "http://guidelines.diabetes.ca/CDACPG/media/documents/patient-resources/resistance-program.pdf" target="_blank"> Physical Activity - Resistance Exercise</a></li>
+                        <li class = "Q3dApp" id = "App_3d_1"><a href = "http://orders.diabetes.ca/collections/educational-material/products/lows-and-highs-blood-glucose-levels?variant=1270803649" target="_blank"> Lows & Highs: Blood Glucose Levels </a></li>
+
+                        <!-- Question 4 -->
+                        <li class = "Q4aApp" id = "App_4a_1"> *Sleep Handout </li>
+                        <li class = "Q4cApp" id = "App_4c_1"> *CPAP Direct Handout </li>
+
+                        <!-- Question 5 -->
+                        <li class = "Q5aApp" id = "App_5a_1"><a href = "http://www.heartandstroke.com/atf/cf/%7B99452D8B-E7F1-4BD6-A57D-B136CE6C95BF%7D/coping-with-stress-en.pdf" target="_blank"> Coping With stress </a></li>
+
+                        <!-- Question 6 -->
+                        <li class = "Q6aApp" id = "App_6a_1"><a href = "http://guidelines.diabetes.ca/CDACPG/media/documents/patient-resources/alcohol-and-diabetes-feb2014.pdf" target="_blank"> Alcohol and Diabetes </a></li>
+                        <li class = "Q6bApp" id = "App_6b_1"><a href = "http://guidelines.diabetes.ca/CDACPG/media/documents/patient-resources/smoking-and-diabetes.pdf" target="_blank"> Smoking and Diabetes </a></li>
+
+                        <!-- Question 9-->
+                        <li class = "" id = "App_9a_1"><a href = "http://guidelines.diabetes.ca/CDACPG/media/documents/patient-resources/basic-carbohydrate-counting-feb2014-v2.pdf" target="_blank"> Foot Care </a></li>
+                        <li class = "Q9cApp" id = "App_9c_1"><a href = "http://guidelines.diabetes.ca/CDACPG/media/documents/patient-resources/managing-your-blood-glucose.pdf" target="_blank"> Managing your blood glucose </a></li>
+
+
+                    </ul>
+                </div>
+            <div>
+            <button class = "btn btn-default" id = "printButton">Print Your Plan</button>
+        </div>
+    </body>
+
+</html>
