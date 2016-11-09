@@ -18,10 +18,10 @@ function printPlan(counter) {
     }
     $("#appointment").remove();
     $("#printButton").remove();
-   // appenddates(counter)
-    //for (i = 1; i<counter; i++) {
-       // $('#inputbox' + i).remove();
-    //}
+    appenddates(counter)
+    for (i = 1; i<counter; i++) {
+   		 $('#inputbox' + i).remove();
+    }
     printcontent = printcontent + document.getElementById("Print").innerHTML
     document.body.innerHTML = printcontent;
     window.print();
