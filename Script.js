@@ -16,8 +16,6 @@ function printPlan(counter) {
             printcontent = printcontent + document.getElementById(arr[i][1]).innerHTML + "<br>"
         }
     }
-    $(document).ready(replaceAllText);
-    $('html').ajaxStop(replaceAllText);
     $("#appointment").remove();
     $("#printButton").remove();
     appenddates(counter)
