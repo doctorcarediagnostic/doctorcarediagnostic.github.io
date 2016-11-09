@@ -663,8 +663,6 @@ $(document).ready(function() {
         return this.value || this.innerHTML;
         });
     })
-    
-    counter+=4
 
     $("#printButton").click(function() {
         printPlan(counter);
