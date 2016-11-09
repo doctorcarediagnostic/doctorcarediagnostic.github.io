@@ -46,6 +46,70 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+
+    <script>
+function loop() {
+ var array_of_date = ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31"];
+ var array_of_month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+ var array_of_year = ["2016","2017","2018","2019","2020","2021","2022","2023","2024","2025","2026","2027","2028","2029","2030"];
+ var array_of_time_hours = ["01","02","03","04","05","06","07","08","09","10","11","12"];
+ var array_of_time_minutes = ["00","05","10","15","20","25","30","35","40","45","50","55"];
+ var array_of_time_noon = ["AM", "PM"];
+ 
+
+ var form = document.getElementsByTagName('form')[0];
+ inputs_date = document.createElement('select');
+ inputs_month = document.createElement('select');
+ inputs_year= document.createElement('select');
+ inputs_hour = document.createElement('select');
+ inputs_min = document.createElement('select');
+ inputs_noon = document.createElement('select');
+ form.id = 'test';
+
+ for (var i = 0; i<31; i++) {
+  var option = document.createElement("option");
+  option.text=array_of_date[i];
+  inputs_date.add(option);
+ }
+ for (var i = 0; i<12; i++) {
+  var option = document.createElement("option");
+  option.text=array_of_month[i];
+  inputs_month.add(option);
+ }
+ for (var i = 0; i<15; i++) {
+  var option = document.createElement("option");
+  option.text=array_of_year[i];
+  inputs_year.add(option);
+ }
+ for (var i = 0; i<12; i++) {
+  var option = document.createElement("option");
+  option.text=array_of_time_hours[i];
+  inputs_hour.add(option);
+ }
+ for (var i = 0; i<12; i++) {
+  var option = document.createElement("option");
+  option.text=array_of_time_minutes[i];
+  inputs_min.add(option);
+ }
+ for (var i = 0; i<2; i++) {
+  var option = document.createElement("option");
+  option.text=array_of_time_noon[i];
+  inputs_noon.add(option);
+ }
+ var ident_1 = document.createTextNode("Date:");
+ form.appendChild(ident_1);
+ form.appendChild(inputs_date);
+ form.appendChild(inputs_month);
+ form.appendChild(inputs_year);
+ var ident_2 = document.createTextNode("  Time:");
+ form.appendChild(ident_2);
+ form.appendChild(inputs_hour);
+ form.appendChild(inputs_min);
+ form.appendChild(inputs_noon);
+ var linebreak = document.createElement("br");
+ form.appendChild(linebreak);
+}
+</script>
     <title> Diagonastic </title>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -718,6 +782,10 @@
                 </div>
             <div>
             <button class = "btn btn-default" id = "printButton">Print Your Plan</button>
+            <form>
+              Plans:
+              <button type="button" onclick="loop()">Add appointment(s)</button><br>
+            </form>
         </div>
     </body>
 
