@@ -69,7 +69,7 @@ function duplicates(arr, ele) {
 function appenddates(counter) {
     $(".datetext").empty();
     for (i = 1; i<counter; i++) {
-        var currentDate = $('#date' + i).datepicker("getDate");
+        var currentDate = $('#date' + i);
         if (currentDate != null) {
             $("<p class = 'datetext'>'"+ currentDate + "</p>").appendTo("#details")
         }
