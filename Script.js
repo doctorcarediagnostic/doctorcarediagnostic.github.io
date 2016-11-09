@@ -36,11 +36,11 @@ function replaceAllText() {
 
 function replaceText(selector, text, newText, flags) {
   var matcher = new RegExp(text, flags);
-  var elems = document.querySelectorAll(selector), i;
-
-  for (i = 0; i < elems.length; i++)
-    if (!elems[i].childNodes.length)
-      elems[i].innerHTML = elems[i].innerHTML.replace(matcher, newText);
+  $(selector).each(function () {
+    var $this = $(this);
+    if (!$this.children().length)
+       $this.text($this.text().replace(matcher, newText));
+  });
 }
 
 function hide(target) {
