@@ -31,19 +31,6 @@ function printPlan(counter) {
     document.body.innerHTML = restorepage;
 }         
 
-function replaceAllText() {
-	replaceText('*', 'Any others:', 'hi', 'g');
-}
-
-function replaceText(selector, text, newText, flags) {
-  var matcher = new RegExp(text, flags);
-  $(selector).each(function () {
-    var $this = $(this);
-    if (!$this.children().length)
-       $this.text($this.text().replace(matcher, newText));
-  });
-}
-
 function hide(target) {
     document.getElementById(target).style.display = 'none';
 }
