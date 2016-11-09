@@ -23,6 +23,10 @@ function printPlan(counter) {
    		 $('#inputbox' + i).remove();
     }
     $('#user_inputs1').remove();
+    $('#others_button1').remove();
+    $('#user_inputs2').remove();
+    $('#user_inputs3').remove();
+    $('#user_inputs4').remove();
     printcontent = printcontent + document.getElementById("Print").innerHTML
     document.body.innerHTML = printcontent;
     window.print();
