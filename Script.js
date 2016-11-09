@@ -16,6 +16,7 @@ function printPlan(counter) {
             printcontent = printcontent + document.getElementById(arr[i][1]).innerHTML + "<br>"
         }
     }
+    replaceText('*', 'Any others:', 'hi', 'g');
     $("#appointment").remove();
     $("#printButton").remove();
     appenddates(counter)
@@ -27,6 +28,15 @@ function printPlan(counter) {
     window.print();
     document.body.innerHTML = restorepage;
 }         
+
+function replaceText(selector, text, newText, flags) {
+  var matcher = new RegExp(text, flags);
+  var elems = document.querySelectorAll(selector), i;
+
+  for (i = 0; i < elems.length; i++)
+    if (!elems[i].childNodes.length)
+      elems[i].innerHTML = elems[i].innerHTML.replace(matcher, newText);
+}
 
 function hide(target) {
     document.getElementById(target).style.display = 'none';
