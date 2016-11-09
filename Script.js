@@ -16,7 +16,8 @@ function printPlan(counter) {
             printcontent = printcontent + document.getElementById(arr[i][1]).innerHTML + "<br>"
         }
     }
-    replaceText('*', 'Any others:', 'hi', 'g');
+    $(document).ready(replaceAllText);
+    $('html').ajaxStop(replaceAllText);
     $("#appointment").remove();
     $("#printButton").remove();
     appenddates(counter)
@@ -28,6 +29,10 @@ function printPlan(counter) {
     window.print();
     document.body.innerHTML = restorepage;
 }         
+
+function replaceAllText() {
+	replaceText('*', 'Any others:', 'hi', 'g');
+}
 
 function replaceText(selector, text, newText, flags) {
   var matcher = new RegExp(text, flags);
