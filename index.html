@@ -57,7 +57,7 @@ function loop() {
  var array_of_time_noon = ["AM", "PM"];
  
 
- var form = document.getElementsByTagName('form')[12];
+ var form = document.getElementsByTagName('form')[13];
  inputs_date = document.createElement('select');
  inputs_month = document.createElement('select');
  inputs_year= document.createElement('select');
@@ -731,6 +731,10 @@ function loop() {
                     </div>
                 </div>
                 
+                <form>
+                Plans:
+                <button type="button" onclick="loop()">Add appointment(s)</button><br>
+                </form>
 
                 <h3> Appendix </h3>
                 <div id = "Intervention">
@@ -782,10 +786,6 @@ function loop() {
                 </div>
             <div>
             <button class = "btn btn-default" id = "printButton">Print Your Plan</button>
-            <form>
-              Plans:
-              <button type="button" onclick="loop()">Add appointment(s)</button><br>
-            </form>
         </div>
     </body>
 
