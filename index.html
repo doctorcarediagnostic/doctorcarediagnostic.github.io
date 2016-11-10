@@ -146,6 +146,24 @@ function loop() {
  var linebreak = document.createElement("br");
  form.appendChild(linebreak);
 }
+
+function deletion() {
+    var x = document.getElementById("dates_id");
+    var x1 = document.getElementById("month_id");
+    var x2 = document.getElementById("year_id");
+    var x3 = document.getElementById("hour_id");
+    var x4 = document.getElementById("min_id");
+    var x5 = document.getElementById("noon_id");
+
+    x.parentNode.removeChild(x);
+    x1.parentNode.removeChild(x1);
+    x2.parentNode.removeChild(x2);
+    x3.parentNode.removeChild(x3);
+    x4.parentNode.removeChild(x4);
+    x5.parentNode.removeChild(x5);
+
+
+}
 </script>
     <title> Diagonastic </title>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -770,7 +788,8 @@ function loop() {
                 
                 <h3 style = "display:inline"> Plan </h3>
                 <form onsubmit="return false" style = "display:inline">
-                <button type="button" id = "appointment" style="color: white; background-color: #4d92f9; border: #4d92f9" onclick="loop()">Add Appointment</button><br>
+                <button type="button" id = "appointment" style="color: white; background-color: #4d92f9; border: #4d92f9" onclick="loop()">Add Appointment</button>
+                <button type="button" id = "appointment_delete" style="color: white; background-color: #4d92f9; border: #4d92f9" onclick="deletion()">Delete Appointment</button><br>
                 </form>
 
                 <h3> Appendix </h3>

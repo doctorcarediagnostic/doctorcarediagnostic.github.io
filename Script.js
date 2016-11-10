@@ -17,6 +17,7 @@ function printPlan(counter) {
         }
     }
     $("#appointment").remove();
+    $("#appointment_delete").remove();
     $("#printButton").remove();
     //appenddates(counter)
     //for (i = 1; i<counter; i++) {
@@ -34,8 +35,8 @@ function printPlan(counter) {
     $('#delete_button2').remove();
     $('#delete_button3').remove();
     $('#delete_button4').remove();
-    $('#disclaimer1').remove();
-    $('#disclaimer2').remove();
+    document.getElementById('disclaimer1').innerHTML = "";
+    document.getElementById('disclaimer2').innerHTML = "";
     printcontent = printcontent + document.getElementById("Print").innerHTML
     document.body.innerHTML = printcontent;
     window.print();
