@@ -34,6 +34,8 @@ function printPlan(counter) {
     $('#delete_button2').remove();
     $('#delete_button3').remove();
     $('#delete_button4').remove();
+    $('#disclaimer1').remove();
+    $('#disclaimer2').remove();
     printcontent = printcontent + document.getElementById("Print").innerHTML
     document.body.innerHTML = printcontent;
     window.print();
