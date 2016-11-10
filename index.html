@@ -34,6 +34,13 @@
     	document.getElementById('displays4').innerHTML = document.getElementById('user_inputs4').value;
     	}
     	</script>
+    	
+    <script language="JavaScript">
+    function delete_others() {
+    	var str = document.getElementById("displays4").innerHTML;
+    	document.getElementById("displays4").innerHTML = " ";
+    	}
+    	</script>
 
     <!--jQuery UI library -->
     <link rel="stylesheet" href="jquery-ui.min.css">
@@ -721,7 +728,7 @@ function loop() {
             		    </form>
                 
                		    <input type="submit" id="others_button4" style="color: white; background-color: #4d92f9; border: #4d92f9" onclick="showInput4();">
-               			<p><span id='displays4'></span></p>
+               			<p><span id='displays4'></span><button onclick="delete_others()">x</button></p>
                     </ul>
                 </div>
 
