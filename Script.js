@@ -17,7 +17,7 @@ function printPlan(counter) {
         }
     }
     $("#appointment").remove();
-    $("#appointment_delete").remove();
+    document.getElementById('appointment_delete').innerHTML = "";
     $("#printButton").remove();
     //appenddates(counter)
     //for (i = 1; i<counter; i++) {
