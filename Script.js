@@ -30,6 +30,10 @@ function printPlan(counter) {
     $('#others_button3').remove();
     $('#user_inputs4').remove();
     $('#others_button4').remove();
+    $('#delete_button1').remove();
+    $('#delete_button2').remove();
+    $('#delete_button3').remove();
+    $('#delete_button4').remove();
     printcontent = printcontent + document.getElementById("Print").innerHTML
     document.body.innerHTML = printcontent;
     window.print();
