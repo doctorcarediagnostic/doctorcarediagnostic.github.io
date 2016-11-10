@@ -2,7 +2,14 @@
 <html lang="en">
 
 <head>
-
+    <style type ="text/css">
+    .deleteButtons{
+    background-color: #d12929;
+    color: #ffffff;
+    height:5px;
+    width:4px;
+    }
+    </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
     <link rel="stylesheet" type="text/css" href="Stylesheet.css">
@@ -36,7 +43,28 @@
     	</script>
     	
     <script language="JavaScript">
-    function delete_others() {
+    function delete_others1() {
+    	var str = document.getElementById("displays1").innerHTML;
+    	document.getElementById("displays1").innerHTML = " ";
+    	}
+    	</script>
+    	
+    <script language="JavaScript">
+    function delete_others2() {
+    	var str = document.getElementById("displays2").innerHTML;
+    	document.getElementById("displays2").innerHTML = " ";
+    	}
+    	</script>
+    	
+    <script language="JavaScript">
+    function delete_others3() {
+    	var str = document.getElementById("displays3").innerHTML;
+    	document.getElementById("displays4").innerHTML = " ";
+    	}
+    	</script>
+    	    	
+    <script language="JavaScript">
+    function delete_others4() {
     	var str = document.getElementById("displays4").innerHTML;
     	document.getElementById("displays4").innerHTML = " ";
     	}
@@ -435,7 +463,7 @@ function loop() {
             		    </form>
             
                         <input type="submit" id="others_button1" style="color: white; background-color: #4d92f9; border: #4d92f9" onclick="showInput1();">
-               			<p><span id='displays1'></span></p>
+               			<p><span id='displays1'></span><button class=deleteButtons onclick="delete_others1()">x</button></p>
                     </ul>
                 </div>
 
@@ -590,7 +618,7 @@ function loop() {
             		    </form>
                 
                		    <input type="submit" id="others_button2" style="color: white; background-color: #4d92f9; border: #4d92f9" onclick="showInput2();">
-               			<p><span id='displays2'></span></p>
+               			<p><span id='displays2'></span><button class=deleteButtons onclick="delete_others3()">2</button></p>
 
                     </ul>
                 </div>
@@ -667,7 +695,7 @@ function loop() {
             		    </form>
                 
                		    <input type="submit" id="others_button3" style="color: white; background-color: #4d92f9; border: #4d92f9" onclick="showInput3();">
-               			<p><span id='displays3'></span></p>
+               			<p><span id='displays3'></span><button class=deleteButtons onclick="delete_others3()">x</button></p>
                     </ul>
                 </div>
 
@@ -728,7 +756,7 @@ function loop() {
             		    </form>
                 
                		    <input type="submit" id="others_button4" style="color: white; background-color: #4d92f9; border: #4d92f9" onclick="showInput4();">
-               			<p><span id='displays4'></span><button onclick="delete_others()">x</button></p>
+               			<p><span id='displays4'></span><button class=deleteButtons onclick="delete_others4()">x</button></p>
                     </ul>
                 </div>
 
