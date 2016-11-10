@@ -133,13 +133,20 @@ function loop() {
   option.text=array_of_time_noon[i];
   inputs_noon.add(option);
  }
- var ident_1 = document.createTextNode("Date:");
- form.appendChild(ident_1);
+ //var ident_1 = document.createTextNode("Date:");
+// form.appendChild(ident_1);
+inputs_date.id = "dates_id";
+ inputs_month.id = "month_id";
+ inputs_year.id = "year_id";
  form.appendChild(inputs_date);
  form.appendChild(inputs_month);
  form.appendChild(inputs_year);
- var ident_2 = document.createTextNode("  Time:");
- form.appendChild(ident_2);
+ 
+ //var ident_2 = document.createTextNode("  Time:");
+ //form.appendChild(ident_2);
+ inputs_hour.id = "hour_id";
+ inputs_min.id = "min_id";
+ inputs_noon.id = "noon_id";
  form.appendChild(inputs_hour);
  form.appendChild(inputs_min);
  form.appendChild(inputs_noon);
