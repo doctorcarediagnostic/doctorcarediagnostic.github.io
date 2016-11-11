@@ -44,7 +44,6 @@
 // }         
 
 function printPlan(counter) {  
-    //var printcontent = document.getElementById("logo").innerHTML + document.getElementById("issues").innerHTML;
     
     var arr = [["#Question1a","Q1a"], ["#Question1b" ,"Q1b"], ["#Question1c" ,"Q1c"], ["#Question1d" ,"Q1d"],
     ["#Question2aY","Q2aY"], ["#Question2aN" ,"Q2aN"], ["#Question2bY" ,"Q2bY"], ["#Question2bN" ,"Q2bN"],
@@ -57,11 +56,14 @@ function printPlan(counter) {
     ["#Question8a" ,"Q8a"], ["#Question8b" ,"Q8b"], ["#Question8c" ,"Q8c"], ["#Question8d","Q8d"], ["#Question8e" ,"Q8e"], ["#Question8f" ,"Q8f"],
     ["#Question9a" ,"Q9a"], ["#Question9b","Q9b"], ["#Question9c" ,"Q9c"]]
     
- //    for (i=0; i<arr.length; i++){
-//         if ($(arr[i][0]).is(":checked")) {
-//             printcontent = printcontent + document.getElementById(arr[i][1]).innerHTML + "<br>"
-//         }
-//     }
+    for (i=0; i<arr.length; i++){
+        if ($(arr[i][0]).is(":checked")) {
+            var para = document.createElement("P");
+            var t = document.createTextNode('"document.getElementById(arr[i][1])"')
+            para.appendChild(t);
+            document.body.appendChild(para);
+        }
+    }
     
     document.getElementById('appointment').remove();
     document.getElementById('appointment_delete').remove();
@@ -81,8 +83,7 @@ function printPlan(counter) {
     document.getElementById('delete_button4').remove();
     document.getElementById('disclaimer1').remove();
     document.getElementById('disclaimer2').remove();
-    //printcontent = printcontent + document.getElementById("Print").innerHTML  
-    //document.body.innerHTML = printcontent;
+    
     window.print();
 }  
 
