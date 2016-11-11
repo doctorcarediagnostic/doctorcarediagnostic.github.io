@@ -44,14 +44,18 @@
 // }         
 
 function printPlan(counter) {  
-    $('#user_inputs1').remove();
-    $('#others_button1').remove();
-    $('#user_inputs2').remove();
-    $('#others_button2').remove();
-    $('#user_inputs3').remove();
-    $('#others_button3').remove();
-    $('#user_inputs4').remove();
-    $('#others_button4').remove();
+    document.getElementById('appointment').innerHTML = ""
+    document.getElementById('appointment_delete').innerHTML = ""
+    document.getElementById('printButton').innerHTML = ""
+    document.getElementById('user_inputs1').remove();
+    document.getElementById('others_button1').remove();
+    document.getElementById('user_inputs2').remove();
+    document.getElementById('others_button2').remove();
+    document.getElementById('user_inputs3').remove();
+    document.getElementById('others_button3').remove();
+    document.getElementById('user_inputs4').remove();
+    document.getElementById('others_button4').remove();
+    
     document.getElementById('delete_button1').innerHTML = ""
     document.getElementById('delete_button2').innerHTML = ""
     document.getElementById('delete_button3').innerHTML = ""
