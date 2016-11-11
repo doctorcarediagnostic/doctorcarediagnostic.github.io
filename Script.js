@@ -1,51 +1,6 @@
-// function printPlan(counter) {
-//     var restorepage = document.body.innerHTML;
-//     var printcontent = document.getElementById("logo").innerHTML + document.getElementById("issues").innerHTML;
-//     var arr = [["#Question1a","Q1a"], ["#Question1b" ,"Q1b"], ["#Question1c" ,"Q1c"], ["#Question1d" ,"Q1d"],
-//     ["#Question2aY","Q2aY"], ["#Question2aN" ,"Q2aN"], ["#Question2bY" ,"Q2bY"], ["#Question2bN" ,"Q2bN"],
-//     ["#Question2c","Q2c"], ["#Question2dY" ,"Q2dY"], ["#Question2dN" ,"Q2dN"], ["#Question2e" ,"Q2e"], 
-//     ["#Question2f","Q2f"], ["#Question2g" ,"Q2g"], ["#Question2h" ,"Q2h"], ["#Question3a" ,"Q3a"],
-//     ["#Question3b","Q3b"], ["#Question3c" ,"Q3c"], ["#Question3d" ,"Q3d"], ["#Question4a" ,"Q4a"], 
-//     ["#Question4a","Q4a"], ["#Question4b" ,"Q4b"], ["#Question4c" ,"Q4c"], ["#Question4d" ,"Q4d"], 
-//     ["#Question5a","Q5a"], ["#Question5b" ,"Q5b"], ["#Question5c" ,"Q5c"], ["#Question5d" ,"Q5d"],
-//     ["#Question6a","Q6a"], ["#Question6b" ,"Q6b"], ["#Question7a" ,"Q7a"], ["#Question7b" ,"Q7b"],["#Question7c","Q7c"],
-//     ["#Question8a" ,"Q8a"], ["#Question8b" ,"Q8b"], ["#Question8c" ,"Q8c"], ["#Question8d","Q8d"], ["#Question8e" ,"Q8e"], ["#Question8f" ,"Q8f"],
-//     ["#Question9a" ,"Q9a"], ["#Question9b","Q9b"], ["#Question9c" ,"Q9c"]]
-//     for (i=0; i<arr.length; i++){
-//         if ($(arr[i][0]).is(":checked")) {
-//             printcontent = printcontent + document.getElementById(arr[i][1]).innerHTML + "<br>"
-//         }
-//     }
-//     $("#appointment").remove();
-//     document.getElementById('appointment_delete').innerHTML = "";
-//     $("#printButton").remove();
-//     //appenddates(counter)
-//     //for (i = 1; i<counter; i++) {
-//    		 //$('#inputbox' + i).remove();
-//     //}
-//     $('#user_inputs1').remove();
-//     $('#others_button1').remove();
-//     $('#user_inputs2').remove();
-//     $('#others_button2').remove();
-//     $('#user_inputs3').remove();
-//     $('#others_button3').remove();
-//     $('#user_inputs4').remove();
-//     $('#others_button4').remove();
-//     $('#delete_button1').remove();
-//     $('#delete_button2').remove();
-//     $('#delete_button3').remove();
-//     $('#delete_button4').remove();
-//     document.getElementById('disclaimer1').innerHTML = "";
-//     document.getElementById('disclaimer2').innerHTML = "";
-//     printcontent = printcontent + document.getElementById("Print").innerHTML
-//     document.body.innerHTML = printcontent;
-//     window.print();
-//     document.body.innerHTML = restorepage;
-// }         
-
-function printPlan(counter) {  
+function printPlan(counter) {
+    var restorepage = document.body.innerHTML;
     var printcontent = document.getElementById("logo").innerHTML + document.getElementById("issues").innerHTML;
-    
     var arr = [["#Question1a","Q1a"], ["#Question1b" ,"Q1b"], ["#Question1c" ,"Q1c"], ["#Question1d" ,"Q1d"],
     ["#Question2aY","Q2aY"], ["#Question2aN" ,"Q2aN"], ["#Question2bY" ,"Q2bY"], ["#Question2bN" ,"Q2bN"],
     ["#Question2c","Q2c"], ["#Question2dY" ,"Q2dY"], ["#Question2dN" ,"Q2dN"], ["#Question2e" ,"Q2e"], 
@@ -56,35 +11,80 @@ function printPlan(counter) {
     ["#Question6a","Q6a"], ["#Question6b" ,"Q6b"], ["#Question7a" ,"Q7a"], ["#Question7b" ,"Q7b"],["#Question7c","Q7c"],
     ["#Question8a" ,"Q8a"], ["#Question8b" ,"Q8b"], ["#Question8c" ,"Q8c"], ["#Question8d","Q8d"], ["#Question8e" ,"Q8e"], ["#Question8f" ,"Q8f"],
     ["#Question9a" ,"Q9a"], ["#Question9b","Q9b"], ["#Question9c" ,"Q9c"]]
-    
     for (i=0; i<arr.length; i++){
         if ($(arr[i][0]).is(":checked")) {
             printcontent = printcontent + document.getElementById(arr[i][1]).innerHTML + "<br>"
         }
     }
-    
-    document.getElementById('appointment').innerHTML = ""
-    document.getElementById('appointment_delete').innerHTML = ""
-    document.getElementById('printButton').innerHTML = ""
-    document.getElementById('user_inputs1').remove();
-    document.getElementById('others_button1').remove();
-    document.getElementById('user_inputs2').remove();
-    document.getElementById('others_button2').remove();
-    document.getElementById('user_inputs3').remove();
-    document.getElementById('others_button3').remove();
-    document.getElementById('user_inputs4').remove();
-    document.getElementById('others_button4').remove();
-    
-    document.getElementById('delete_button1').innerHTML = ""
-    document.getElementById('delete_button2').innerHTML = ""
-    document.getElementById('delete_button3').innerHTML = ""
-    document.getElementById('delete_button4').innerHTML = ""
+    $("#appointment").remove();
+    document.getElementById('appointment_delete').innerHTML = "";
+    $("#printButton").remove();
+    //appenddates(counter)
+    //for (i = 1; i<counter; i++) {
+   		 //$('#inputbox' + i).remove();
+    //}
+    $('#user_inputs1').remove();
+    $('#others_button1').remove();
+    $('#user_inputs2').remove();
+    $('#others_button2').remove();
+    $('#user_inputs3').remove();
+    $('#others_button3').remove();
+    $('#user_inputs4').remove();
+    $('#others_button4').remove();
+    $('#delete_button1').remove();
+    $('#delete_button2').remove();
+    $('#delete_button3').remove();
+    $('#delete_button4').remove();
     document.getElementById('disclaimer1').innerHTML = "";
     document.getElementById('disclaimer2').innerHTML = "";
-    printcontent = printcontent + document.getElementById("Print").innerHTML  
+    printcontent = printcontent + document.getElementById("Print").innerHTML
     document.body.innerHTML = printcontent;
     window.print();
-}  
+    document.body.innerHTML = restorepage;
+}         
+
+// function printPlan(counter) {  
+//     var printcontent = document.getElementById("logo").innerHTML + document.getElementById("issues").innerHTML;
+//     
+//     var arr = [["#Question1a","Q1a"], ["#Question1b" ,"Q1b"], ["#Question1c" ,"Q1c"], ["#Question1d" ,"Q1d"],
+//     ["#Question2aY","Q2aY"], ["#Question2aN" ,"Q2aN"], ["#Question2bY" ,"Q2bY"], ["#Question2bN" ,"Q2bN"],
+//     ["#Question2c","Q2c"], ["#Question2dY" ,"Q2dY"], ["#Question2dN" ,"Q2dN"], ["#Question2e" ,"Q2e"], 
+//     ["#Question2f","Q2f"], ["#Question2g" ,"Q2g"], ["#Question2h" ,"Q2h"], ["#Question3a" ,"Q3a"],
+//     ["#Question3b","Q3b"], ["#Question3c" ,"Q3c"], ["#Question3d" ,"Q3d"], ["#Question4a" ,"Q4a"], 
+//     ["#Question4a","Q4a"], ["#Question4b" ,"Q4b"], ["#Question4c" ,"Q4c"], ["#Question4d" ,"Q4d"], 
+//     ["#Question5a","Q5a"], ["#Question5b" ,"Q5b"], ["#Question5c" ,"Q5c"], ["#Question5d" ,"Q5d"],
+//     ["#Question6a","Q6a"], ["#Question6b" ,"Q6b"], ["#Question7a" ,"Q7a"], ["#Question7b" ,"Q7b"],["#Question7c","Q7c"],
+//     ["#Question8a" ,"Q8a"], ["#Question8b" ,"Q8b"], ["#Question8c" ,"Q8c"], ["#Question8d","Q8d"], ["#Question8e" ,"Q8e"], ["#Question8f" ,"Q8f"],
+//     ["#Question9a" ,"Q9a"], ["#Question9b","Q9b"], ["#Question9c" ,"Q9c"]]
+//     
+//     for (i=0; i<arr.length; i++){
+//         if ($(arr[i][0]).is(":checked")) {
+//             printcontent = printcontent + document.getElementById(arr[i][1]).innerHTML + "<br>"
+//         }
+//     }
+//     
+//     document.getElementById('appointment').innerHTML = ""
+//     document.getElementById('appointment_delete').innerHTML = ""
+//     document.getElementById('printButton').innerHTML = ""
+//     document.getElementById('user_inputs1').remove();
+//     document.getElementById('others_button1').remove();
+//     document.getElementById('user_inputs2').remove();
+//     document.getElementById('others_button2').remove();
+//     document.getElementById('user_inputs3').remove();
+//     document.getElementById('others_button3').remove();
+//     document.getElementById('user_inputs4').remove();
+//     document.getElementById('others_button4').remove();
+//     
+//     document.getElementById('delete_button1').innerHTML = ""
+//     document.getElementById('delete_button2').innerHTML = ""
+//     document.getElementById('delete_button3').innerHTML = ""
+//     document.getElementById('delete_button4').innerHTML = ""
+//     document.getElementById('disclaimer1').innerHTML = "";
+//     document.getElementById('disclaimer2').innerHTML = "";
+//     printcontent = printcontent + document.getElementById("Print").innerHTML  
+//     document.body.innerHTML = printcontent;
+//     window.print();
+// }  
 
 function hide(target) {
     document.getElementById(target).style.display = 'none';
