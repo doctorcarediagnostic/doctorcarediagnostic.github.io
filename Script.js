@@ -43,7 +43,21 @@
 //     document.body.innerHTML = restorepage;
 // }         
 
-function printPlan(counter) {    
+function printPlan(counter) {  
+    $('#user_inputs1').remove();
+    $('#others_button1').remove();
+    $('#user_inputs2').remove();
+    $('#others_button2').remove();
+    $('#user_inputs3').remove();
+    $('#others_button3').remove();
+    $('#user_inputs4').remove();
+    $('#others_button4').remove();
+    $('#delete_button1').remove();
+    $('#delete_button2').remove();
+    $('#delete_button3').remove();
+    $('#delete_button4').remove();
+    document.getElementById('disclaimer1').innerHTML = "";
+    document.getElementById('disclaimer2').innerHTML = "";  
     window.print();
 }  
 

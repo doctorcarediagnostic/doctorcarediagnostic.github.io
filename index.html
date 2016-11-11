@@ -91,18 +91,8 @@
    }
 
    function printdiv() {
-    ('user_inputs1').remove();
-    ('others_button1').remove();
-    ('user_inputs2').remove();
-    ('others_button2').remove();
-    ('user_inputs3').remove();
-    ('others_button3').remove();
-    ('user_inputs4').remove();
-    ('others_button4').remove();
-    ('delete_button1').remove();
-    ('delete_button2').remove();
-    ('delete_button3').remove();
-    ('delete_button4').remove();
+    document.getElementById('disclaimer1').innerHTML = "";
+    document.getElementById('disclaimer2').innerHTML = "";  
     window.print();
    }
    
@@ -788,7 +778,7 @@
             <div>
         </div>
         <button type="button" style="color: white; background-color: #4d92f9; border: #4d92f9" onclick="printdiv()">print</button>
-                <h3 style = "display:inline"> Plaerns </h3>
+                <h3 style = "display:inline"> Plans </h3>
                 <form onsubmit="return false" style = "display:inline">
                 <button type="button" id = "appointment" style="color: white; background-color: #4d92f9; border: #4d92f9" onclick="insRow()"">Add Appointment</button>
                 <button type="button" id = "appointment_delete" style="color: white; background-color: #4d92f9; border: #4d92f9" onclick="deleteRow(this)">Delete Appointment</button><br>
