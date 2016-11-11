@@ -44,7 +44,7 @@
 // }         
 
 function printPlan(counter) {  
-    var printcontent = document.getElementById("logo").innerHTML + document.getElementById("issues").innerHTML;
+    //var printcontent = document.getElementById("logo").innerHTML + document.getElementById("issues").innerHTML;
     
     var arr = [["#Question1a","Q1a"], ["#Question1b" ,"Q1b"], ["#Question1c" ,"Q1c"], ["#Question1d" ,"Q1d"],
     ["#Question2aY","Q2aY"], ["#Question2aN" ,"Q2aN"], ["#Question2bY" ,"Q2bY"], ["#Question2bN" ,"Q2bN"],
@@ -63,9 +63,9 @@ function printPlan(counter) {
 //         }
 //     }
     
-    document.getElementById('appointment').innerHTML = ""
-    document.getElementById('appointment_delete').innerHTML = ""
-    document.getElementById('printButton').innerHTML = ""
+    document.getElementById('appointment').remove();
+    document.getElementById('appointment_delete').remove();
+    document.getElementById('printButton').remove();
     document.getElementById('user_inputs1').remove();
     document.getElementById('others_button1').remove();
     document.getElementById('user_inputs2').remove();
@@ -75,14 +75,14 @@ function printPlan(counter) {
     document.getElementById('user_inputs4').remove();
     document.getElementById('others_button4').remove();
     
-    document.getElementById('delete_button1').innerHTML = ""
-    document.getElementById('delete_button2').innerHTML = ""
-    document.getElementById('delete_button3').innerHTML = ""
-    document.getElementById('delete_button4').innerHTML = ""
-    document.getElementById('disclaimer1').innerHTML = "";
-    document.getElementById('disclaimer2').innerHTML = "";
-    printcontent = printcontent + document.getElementById("Print").innerHTML  
-    document.body.innerHTML = printcontent;
+    document.getElementById('delete_button1').remove();
+    document.getElementById('delete_button2').remove();
+    document.getElementById('delete_button3').remove();
+    document.getElementById('delete_button4').remove();
+    document.getElementById('disclaimer1').remove();
+    document.getElementById('disclaimer2').remove();
+    //printcontent = printcontent + document.getElementById("Print").innerHTML  
+    //document.body.innerHTML = printcontent;
     window.print();
 }  
 
