@@ -52,7 +52,7 @@ function printPlan(counter) {
     $('#others_button3').remove();
     $('#user_inputs4').remove();
     $('#others_button4').remove();
-    document.getElementById('elete_button1').innerHTML = ""
+    document.getElementById('delete_button1').innerHTML = ""
     document.getElementById('delete_button2').innerHTML = ""
     document.getElementById('delete_button3').innerHTML = ""
     document.getElementById('delete_button4').innerHTML = ""
