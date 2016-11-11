@@ -723,28 +723,7 @@
                     <div id = "details">
                     </div>
                 </div> -->
-                <button type="button" id = "appointment_delete" style="color: white; background-color: #4d92f9; border: #4d92f9" onclick="printdiv()">print</button>
-                <h3 style = "display:inline"> Plan </h3>
-                <form onsubmit="return false" style = "display:inline">
-                <button type="button" id = "appointment" style="color: white; background-color: #4d92f9; border: #4d92f9" onclick="insRow()"">Add Appointment</button>
-                <button type="button" id = "appointment_delete" style="color: white; background-color: #4d92f9; border: #4d92f9" onclick="deleteRow(this)">Delete Appointment</button><br>
-                </form>
-                
-                <table id = "Table_shown">
-                </table>
-          
-                <table id="Table_hidden" style="display:none">
-                <tr>
-                  <td>Date:</td>
-                  <td><select><option>01</option><option>02</option><option>03</option><option>04</option><option>05</option><option>06</option><option>07</option><option>08</option><option>09</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>31</option></select></td>
-                  <td><Select><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select></td>
-                  <td><Select><option>2016</option><option>2017</option><option>2018</option><option>2019</option><option>2020</option><option>2021</option><option>2022</option><option>2023</option><option>2024</option><option>2025</option><option>2026</option><option>2027</option><option>2028</option><option>2029</option><option>2030</option></select></td>
-                  <td>Time:</td>
-                  <td><select><option>01</option><option>02</option><option>03</option><option>04</option><option>05</option><option>06</option><option>07</option><option>08</option><option>09</option><option>10</option><option>11</option><option>12</option></select></td>
-                  <td><select><option>00</option><option>05</option><option>10</option><option>15</option><option>20</option><option>25</option><option>30</option><option>35</option><option>40</option><option>45</option><option>50</option><option>55</option></select></td>
-                  <td><select><option>AM</option><option>PM</option></select></td>
-               </tr>
-               </table>
+            
                 
                 <h3> Appendix </h3>
                 <div id = "Intervention">
@@ -795,6 +774,28 @@
                     </ul>
                 </div>
             <div>
+            <button type="button" id = "appointment_delete" style="color: white; background-color: #4d92f9; border: #4d92f9" onclick="printdiv()">print</button>
+                <h3 style = "display:inline"> Plan </h3>
+                <form onsubmit="return false" style = "display:inline">
+                <button type="button" id = "appointment" style="color: white; background-color: #4d92f9; border: #4d92f9" onclick="insRow()"">Add Appointment</button>
+                <button type="button" id = "appointment_delete" style="color: white; background-color: #4d92f9; border: #4d92f9" onclick="deleteRow(this)">Delete Appointment</button><br>
+                </form>
+                
+                <table id = "Table_shown">
+                </table>
+          
+                <table id="Table_hidden" style="display:none">
+                <tr>
+                  <td>Date:</td>
+                  <td><select><option>01</option><option>02</option><option>03</option><option>04</option><option>05</option><option>06</option><option>07</option><option>08</option><option>09</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>31</option></select></td>
+                  <td><Select><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select></td>
+                  <td><Select><option>2016</option><option>2017</option><option>2018</option><option>2019</option><option>2020</option><option>2021</option><option>2022</option><option>2023</option><option>2024</option><option>2025</option><option>2026</option><option>2027</option><option>2028</option><option>2029</option><option>2030</option></select></td>
+                  <td>Time:</td>
+                  <td><select><option>01</option><option>02</option><option>03</option><option>04</option><option>05</option><option>06</option><option>07</option><option>08</option><option>09</option><option>10</option><option>11</option><option>12</option></select></td>
+                  <td><select><option>00</option><option>05</option><option>10</option><option>15</option><option>20</option><option>25</option><option>30</option><option>35</option><option>40</option><option>45</option><option>50</option><option>55</option></select></td>
+                  <td><select><option>AM</option><option>PM</option></select></td>
+               </tr>
+               </table>
             <button class = "btn btn-default" id = "printButton">Print Your Plan (*)</button>
             <p id = "disclaimer1"><i>* - Click this once the form is complete. You can save the pages as pdf by changing destination to "Save as PDF"</i></p>
             <p id = "disclaimer2"><i>To restart the form, please refresh the page</i></p>
