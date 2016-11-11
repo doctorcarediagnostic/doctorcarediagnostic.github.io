@@ -16,6 +16,8 @@ function printPlan(counter) {
             printcontent = printcontent + document.getElementById(arr[i][1]).innerHTML + "<br>"
         }
     }
+    var appoint_entries = document.getElementsById("Table_shown").innerHTML;
+    printcontent = printcontent + appoint_entries;
     $("#appointment").remove();
     document.getElementById('appointment_delete').innerHTML = "";
     $("#printButton").remove();
