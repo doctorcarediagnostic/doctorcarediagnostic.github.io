@@ -286,7 +286,7 @@
      }
     
     if (x26 == true) {
-       document.getElementById("hidden5c").innerHTML = "Knowledge";
+       document.getElementById("hidden5c").innerHTML = "Knowledge (Stress)";
      }
      else {
        document.getElementById("hidden5c").innerHTML = "";
@@ -314,7 +314,7 @@
      }
     
     if (x30 == true) {
-       document.getElementById("hidden7a").innerHTML = "Knowledge";
+       document.getElementById("hidden7a").innerHTML = "Knowledge (Medication)";
      }
      else {
        document.getElementById("hidden7a").innerHTML = "";
@@ -426,6 +426,15 @@
    }
 
    function printdiv() {
+    document.getElementById('Clinical_form').remove();
+    document.getElementById('Nutrition_form').remove();
+    document.getElementById('Physical_Activity_form').remove();
+    document.getElementById('Sleep_form').remove();
+    document.getElementById('Stress_form').remove();
+    document.getElementById('Substance_form').remove();
+    document.getElementById('Medication_form').remove();
+    document.getElementById('Social_Issue_form').remove();
+    document.getElementById('Self_Management_form').remove();
     document.getElementById('appointment').remove();
     document.getElementById('appointment_delete').remove();
     document.getElementById('printButton').remove();
@@ -593,7 +602,7 @@
                             </div>
 
                             <div class="checkbox">
-                                <label><input type="checkbox" onclick="myFunction()" name="Q5c" id = "Question5c">Knowledge</label><br>
+                                <label><input type="checkbox" onclick="myFunction()" name="Q5c" id = "Question5c">Knowledge (Stress)</label><br>
                             </div>
 
                             <div class="checkbox">
@@ -619,7 +628,7 @@
                     <div class = "panel panel-default panel-body" data-toggle = "collapse" data-target = "#Medication" id = "Topics" style="cursor: pointer;"> Medication: </div>
                         <form role="form" class = "collapse" id = "Medication">
                             <div class="checkbox">
-                                <input type="checkbox" onclick="myFunction()" id = "Question7a"><label id = "Q7a">Knowledge</label><br>
+                                <input type="checkbox" onclick="myFunction()" id = "Question7a"><label id = "Q7a">Knowledge (Medication)</label><br>
                             </div>
 
                             <div class="checkbox">
