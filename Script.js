@@ -60,7 +60,7 @@ function printPlan(counter) {
             printcontent = printcontent + document.getElementById(arr[i][1]).innerHTML + "<br>"
         }
     }
-    document.getElementById("issues").innerHTML = printcontent;
+    //document.getElementById("issues").innerHTML = printcontent;
     $("#appointment").remove();
     document.getElementById('appointment_delete').innerHTML = "";
     $("#printButton").remove();
