@@ -58,7 +58,7 @@ function printPlan(counter) {
     
     for (i=0; i<arr.length; i++){
         if ($(arr[i][0]).is(":checked")) {
-            document.getElementById('issues').innerHTML = document.getElementById(arr[i][1]).innerHTML;
+            document.getElementById('issues').value = document.getElementById(arr[i][1]).innerHTML;
         }
     }
     
