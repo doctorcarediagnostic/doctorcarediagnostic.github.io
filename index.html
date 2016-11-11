@@ -451,7 +451,6 @@
     document.getElementById('delete_button3').remove();
     document.getElementById('delete_button4').remove();
     document.getElementById('disclaimer1').remove();
-    document.getElementById('disclaimer2').remove(); 
     window.print();
    }
    
@@ -1141,7 +1140,6 @@
                 <form onsubmit="return false" style = "display:inline">
                 <button type="button" id = "appointment" style="color: white; background-color: #4d92f9; border: #4d92f9" onclick="insRow()"">Add Appointment</button>
                 <button type="button" id = "appointment_delete" style="color: white; background-color: #4d92f9; border: #4d92f9" onclick="deleteRow(this)">Delete Appointment</button><br>
-                <button type="button" style="color: white; background-color: #4d92f9; border: #4d92f9" onclick="printdiv()">Print</button>
                 </form>
                 
                 <table id = "Table_shown">
@@ -1208,7 +1206,8 @@
 
                     </ul>
                 </div>
-            <button class = "btn btn-default" id = "printButton">Print Your Plan (*)</button>
+            <button type="button" style="color: white; background-color: #4d92f9; border: #4d92f9" onclick="printdiv()">Print Your Plan (*)</button>
+            <!--<button class = "btn btn-default" id = "printButton">Print Your Plan (*)</button> -->
             <p id = "disclaimer1"><i>* - Click this once the form is complete. You can save the pages as pdf by changing destination to "Save as PDF"</i></p>
             <p id = "disclaimer2"><i>To restart the form, please refresh the page</i></p>
             <div>
