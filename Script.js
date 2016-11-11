@@ -80,7 +80,8 @@ function printPlan(counter) {
     document.getElementById('delete_button3').innerHTML = ""
     document.getElementById('delete_button4').innerHTML = ""
     document.getElementById('disclaimer1').innerHTML = "";
-    document.getElementById('disclaimer2').innerHTML = "";  
+    document.getElementById('disclaimer2').innerHTML = "";
+    printcontent = printcontent + document.getElementById("Print").innerHTML  
     document.body.innerHTML = printcontent;
     window.print();
 }  
