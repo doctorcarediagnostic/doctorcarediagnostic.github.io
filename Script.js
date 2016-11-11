@@ -57,11 +57,11 @@ function printPlan(counter) {
     ["#Question8a" ,"Q8a"], ["#Question8b" ,"Q8b"], ["#Question8c" ,"Q8c"], ["#Question8d","Q8d"], ["#Question8e" ,"Q8e"], ["#Question8f" ,"Q8f"],
     ["#Question9a" ,"Q9a"], ["#Question9b","Q9b"], ["#Question9c" ,"Q9c"]]
     
-    for (i=0; i<arr.length; i++){
-        if ($(arr[i][0]).is(":checked")) {
-            printcontent = printcontent + document.getElementById(arr[i][1]).innerHTML + "<br>"
-        }
-    }
+ //    for (i=0; i<arr.length; i++){
+//         if ($(arr[i][0]).is(":checked")) {
+//             printcontent = printcontent + document.getElementById(arr[i][1]).innerHTML + "<br>"
+//         }
+//     }
     
     document.getElementById('appointment').innerHTML = ""
     document.getElementById('appointment_delete').innerHTML = ""
