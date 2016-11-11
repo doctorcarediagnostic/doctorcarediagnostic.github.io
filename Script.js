@@ -59,8 +59,8 @@ function printPlan(counter) {
     for (i=0; i<arr.length; i++){
         if ($(arr[i][0]).is(":checked")) {
             var para = document.createElement("P");
-            var temp = document.getElementById(arr[i][1])
-            var t = document.createTextNode(temp)
+            var temp = document.getElementById(arr[i][1]).innerHTML;
+            var t = document.createTextNode(temp);
             para.appendChild(t);
             document.body.appendChild(para);
         }
